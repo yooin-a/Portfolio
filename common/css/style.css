@@ -1,0 +1,691 @@
+
+/* wrap  */
+.wrap {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 50px 50px 0 50px;
+}
+
+
+/* header  */
+header {
+    width: 100%;
+    height:auto;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 3;
+}
+
+header .logo {
+    position: relative;
+    width: 100%;
+    max-width: 80px;
+    height: 40px;
+}
+
+header .logo span {
+    display: block;
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+header .logo span:nth-child(2) {
+    animation:rotateCircle2 1.3s ease-in-out;
+    left:20px;
+}
+    @keyframes rotateCircle2 {
+        0% {
+            opacity:0;
+            left:-20px;
+        }
+        100% {
+            opacity:1;
+            left:20px;
+            transform: rotate(360deg);
+        }
+    }
+
+header .logo span:nth-child(3) {
+    animation:rotateCircle3 1.3s ease-in-out;
+    left: 40px;
+}
+    @keyframes rotateCircle3 {
+        0% {
+            opacity:0;
+            left:-20px;
+        }
+        100% {
+            opacity:1;
+            left:40px;
+            transform: rotate(360deg);
+        }
+    }
+
+
+header .logo span:first-child:before,
+header .logo span:nth-child(3):before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #000;
+}
+
+header .logo span:nth-child(2):before,
+header .logo span:nth-child(3):after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+header ul {
+    text-align: center;
+    font-size: 0;
+    line-height: 40px;
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+}
+
+header ul li:last-child {
+    padding-left: 70px;
+}
+
+header ul li:last-child:after {
+    content: "";
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    animation:line 1s linear forwards;
+    animation-duration:1.5s;
+    animation-delay:1s;
+}
+    @keyframes line {
+        0% {
+            opacity:0;
+            width:0;
+        }
+        100% {
+            opacity:1;
+            width:100%;
+            max-width:50px;
+        }
+    }
+
+header .btnProfile {
+    color: #fff;
+    font-size: 35px;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    font-family:'AppleSDGothicNeoB';
+    font-weight:900;
+    animation:rotate-A .5s linear 1.5s forwards;
+}
+    @keyframes rotate-A {
+        100% {
+            transform:rotate(180deg);
+        }
+    }
+
+header .btnProfile:hover {
+    animation:rotate-A-active .5s linear 0s none;
+}
+    @keyframes rotate-A-active {
+        0% {
+            transform:rotate(180deg);
+        }
+        100% {
+            transform:rotate(360deg);
+        }
+    }
+
+/* circle  */
+.circle {
+    display: block;
+    border-radius: 50%;
+    position: Absolute;
+    animation: circle-wave 10s ease-in-out infinite;
+}
+
+    @keyframes circle-wave {
+      20% {
+        border-radius: 45% 55% 62% 38%/53% 51% 49% 47%;
+      }
+      40% {
+        border-radius: 45% 55% 49% 51%/36% 51% 49% 64%;
+      }
+      60% {
+        border-radius: 60% 40% 57% 43%/47% 62% 38% 53%;
+      }
+      80% {
+        border-radius: 60% 40% 32% 68%/38% 36% 64% 62%;
+      }
+    }
+
+.circle.c-blue {
+    background: #006cff;
+    width: 800px;
+    height: 800px;
+    top: -120px;
+    right: -120px;
+}
+
+.circle.c-yellow {
+    background: #ffe200;
+    width: 450px;
+    height: 450px;
+    bottom: -25%;
+    right: -10%;
+}
+
+.circle.c-purple {
+    background: #2800ac;
+    width: 900px;
+    height: 900px;
+    top: 35%;
+    left: -15%;
+}
+
+.circle.c-purple2 {
+    background: #15005c;
+    width: 300px;
+    height: 300px;
+    bottom: -15%;
+    left: -5%;
+
+}
+
+/* portfolioWrap */
+.portfolioWrap {
+    width: 94%;
+    margin: 0 auto 45px;
+    padding: 45px;
+    background: #fff;
+    position: Relative;
+    z-index: 2;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.16);
+}
+
+.portfolioWrap .title {
+    width: 100%;
+    max-width: 264px;
+    margin-left:1%;
+    margin-bottom: 60px;
+}
+
+.portfolioWrap .title img {
+    display: block;
+    width: 100%;
+}
+
+.portfolioWrap nav {
+    position: absolute;
+    top: 86px;
+    right: 45px;
+    font-size: 0;
+    margin-right:1%
+}
+
+.portfolioWrap nav span {
+    display: inline-block;
+    font-size: 21px;
+    color: #999;
+    margin-left: 32px;
+    position: relative;
+    cursor:pointer
+}
+
+.portfolioWrap nav span.active {
+    color: #000;
+    font-weight: 600;
+}
+
+.portfolioWrap nav span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 12px;
+    height: 4px;
+    background: #999;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.portfolioWrap nav span:hover:after {
+    top: -12px;
+    right: -12px;
+    opacity: 1;
+}
+
+.portfolioWrap nav span.active:after {
+    top: -12px;
+    right: -12px;
+    background: #000;
+    opacity: 1;
+}
+
+.portfolioWrap .listWrap {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+
+.portfolioWrap .listWrap a {
+    display: none;
+    box-sizing: border-box;
+    width: 23%;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 1%;
+    margin-bottom: 15px;
+    /*transition: all 0.5s ease-in-out;*/
+}
+
+.portfolioWrap .listWrap a:hover {
+/*
+    border-color:transparent;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+*/
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolioWrap .listWrap a figure {
+    overflow: hidden;
+}
+
+.portfolioWrap .listWrap a figure img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolioWrap .listWrap a:hover figure img {
+    transform: scale(1.1);
+}
+
+.portfolioWrap .listWrap a dl {
+    box-sizing: border-box;
+    padding: 19px 23px 23px;
+    background: url(../../images/icon_file.png) 94% center no-repeat;
+    background-size: 20px;
+}
+
+.portfolioWrap .listWrap a dl dt {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 10px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.portfolioWrap .listWrap a dl dd {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 100;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.webpublisher {
+    position: fixed;
+    top: 50%;
+    left: -50px;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    transform: rotate(-90deg);
+    font-size: 0;
+    margin-top: -45px;
+}
+
+.webpublisher li {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 100;
+    position: relative;
+}
+
+.webpublisher li:first-child {
+    padding-right: 70px;
+}
+
+.webpublisher li:first-child:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.mailPhone {
+    position: fixed;
+    top: 50%;
+    right: 25px;
+    margin-top: -40px;
+}
+
+.mailPhone .btnMail {
+    display: block;
+    width: 29px;
+    height: 29px;
+    background: url(../../images/icon_email.png) center no-repeat;
+    margin-bottom: 10px;
+}
+
+.mailPhone .btnPhone {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../../images/icon_phone.png) center no-repeat;
+    background-size: 100%;
+    margin:0 auto;
+}
+
+.btnResume {
+    position: fixed;
+    bottom: 60px;
+    right: 0;
+    transform: rotate(90deg);
+    line-height: 25px;
+}
+
+.btnResume a {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 30px;
+}
+
+.btnResume a:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height:25px;
+    background: url(../../images/icon_resume.png) center right no-repeat;
+    background-size:100%;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btnResume a span {
+    display: block;
+    font-weight: bold;
+}
+
+
+/* /// popup-profile /// */
+.popup-profile {
+    width: 100%;
+    max-height: 100%;
+    min-height:100vh;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1000;
+    display:none;
+    transition:all 0.5s ease-in-out
+}
+
+.popup-profile.active {
+    display:block;
+}
+
+.popup-profile .inner {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:100%;
+    max-width:580px;
+    background: #006cff;
+    color: #fff;
+    box-sizing: border-box;
+    padding:60px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-profile .inner .title {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+.popup-profile .inner .photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 45px auto;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+.popup-profile .inner .photo video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-profile .inner ul li {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.popup-profile .inner ul li b {
+    display: inline-block;
+    width: 80px;
+}
+
+.popup-profile .inner a {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: bold;
+    background: #ffe200;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 45px auto 0;
+    text-align: center;
+}
+
+.popup-profile .inner button {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+}
+
+.popup-profile .inner button:before,
+.popup-profile .inner button:after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background: #fff;
+}
+
+.popup-profile .inner button:before {
+    transform: rotate(45deg);
+}
+
+.popup-profile .inner button:after {
+    transform: rotate(-45deg);
+    margin-top: -1px;
+}
+
+
+
+/* /// mediaQuery - tablet(1024px~768px) /// */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .wrap {
+        padding: 30px 30px 0 30px;
+    }
+    .portfolioWrap {
+        padding: 30px;
+    }
+    .portfolioWrap .title {
+        margin-bottom: 30px;
+    }
+    .portfolioWrap .title img {
+        max-width: 180px;
+    }
+    .portfolioWrap nav {
+        top: 70px;
+    }
+    .portfolioWrap nav span {
+        font-size: 18px;
+        margin-left: 25px;
+    }
+    .portfolioWrap .listWrap a {
+        width: 31.333%;
+    }
+    .portfolioWrap .listWrap a dl {
+        padding: 15px;
+    }
+    .portfolioWrap .listWrap a dl dt {
+        margin-bottom: 5px;
+        font-size: 16px;
+        width: 90%;
+    }
+    .portfolioWrap .listWrap a dl dd {
+        font-size: 13px;
+    }
+    .btnResume {
+        right: -12px;
+    }
+    .btnResume a span {
+        font-size: 13px;
+    }
+    .webpublisher li {
+        font-size: 13px;
+    }
+    .mailPhone {
+        right: 15px;
+    }
+
+}
+
+/* /// mediaQuery - mobile(767px~320px) /// */
+@media screen and (min-width:320px) and (max-width:767px) {
+    .wrap {
+        padding: 30px 3% 0 3%;
+    }
+    header {
+        margin-bottom: 60px;
+    }
+    header ul {
+        display: none;
+    }
+    header .logo span {
+        width: 30px;
+        height: 30px;
+    }
+    header .logo span:nth-child(2) {
+        left: 15px;
+    }
+    header .logo span:nth-child(3) {
+        left: 30px;
+    }
+    header .btnProfile {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    header ul li {
+        font-size: 13px;
+    }
+    .portfolioWrap {
+        width: 100%;
+        padding: 30px;
+    }
+    .portfolioWrap .title {
+        margin-bottom: 30px;
+    }
+    .portfolioWrap .title img {
+        max-width: 120px;
+    }
+    .portfolioWrap nav {
+        top: 45px;
+    }
+    .portfolioWrap nav span {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .portfolioWrap .listWrap a {
+        width: 48%;
+    }
+    .portfolioWrap .listWrap a dl {
+        padding: 15px;
+    }
+    .portfolioWrap .listWrap a dl dt {
+        margin-bottom: 5px;
+        font-size: 16px;
+        width: 90%;
+    }
+    .portfolioWrap .listWrap a dl dd {
+        font-size: 13px;
+    }
+    .btnResume {
+        display: none;
+    }
+    .webpublisher {
+        display: none;
+    }
+    .mailPhone {
+        display: none;
+    }
+
+}
+

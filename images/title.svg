@@ -1,0 +1,15 @@
+<svg id="구성_요소_5_1" data-name="구성 요소 5 – 1" xmlns="http://www.w3.org/2000/svg" width="284" height="94">
+    <defs>
+        <style>
+            .cls-1{font-size:65px;font-family:SourceHanSansHC-Bold,Source Han Sans HC;font-weight:700}
+        </style>
+    </defs>
+    <g id="구성_요소_4_1" data-name="구성 요소 4 – 1" transform="rotate(-45 153.347 -260.336)">
+        <circle id="타원_12" data-name="타원 12" cx="3.621" cy="3.621" r="3.621"/>
+        <circle id="타원_13" data-name="타원 13" cx="3.621" cy="3.621" r="3.621" transform="translate(7.277)"/>
+        <path id="사각형_6" data-name="사각형 6" transform="translate(3.621)" d="M0 0h7.277v7.243H0z"/>
+    </g>
+    <text id="Portfol_" data-name="Portfol" class="cls-1" transform="translate(0 75)"><tspan x="0" y="0">Portfol </tspan></text>
+    <path id="사각형_7" data-name="사각형 7" transform="translate(230 41)" d="M0 0h9v36H0z"/>
+    <text id="o" class="cls-1" transform="translate(243 75)"><tspan x="0" y="0">o</tspan></text>
+</svg>
