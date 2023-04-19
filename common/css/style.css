@@ -235,20 +235,20 @@ header .btnProfile:hover {
 }
 
 .portfolioWrap .title {
-    width: 100%;
-    max-width: 264px;
     margin-left:1%;
     margin-bottom: 60px;
+    font-size: 60px;
+    display:block;
 }
-
+/*
 .portfolioWrap .title img {
     display: block;
     width: 100%;
 }
-
+*/
 .portfolioWrap nav {
     position: absolute;
-    top: 86px;
+    top: 65px;
     right: 45px;
     font-size: 0;
     margin-right:1%
@@ -578,16 +578,19 @@ header .btnProfile:hover {
     }
     .portfolioWrap .title {
         margin-bottom: 30px;
+        font-size: 35px;
     }
+    /*
     .portfolioWrap .title img {
         max-width: 180px;
     }
+    */
     .portfolioWrap nav {
-        top: 70px;
+        top: 40px;
     }
     .portfolioWrap nav span {
         font-size: 18px;
-        margin-left: 25px;
+        margin-left: 20px;
     }
     .portfolioWrap .listWrap a {
         width: 31.333%;
@@ -651,17 +654,32 @@ header .btnProfile:hover {
         padding: 30px;
     }
     .portfolioWrap .title {
-        margin-bottom: 30px;
+        display: none
     }
+    /*
     .portfolioWrap .title img {
         max-width: 120px;
     }
+    */
     .portfolioWrap nav {
-        top: 45px;
+        top: 0;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        right: 0;
+        margin: 30px 0;
     }
     .portfolioWrap nav span {
         font-size: 16px;
         margin-left: 15px;
+    }
+    .portfolioWrap nav span:after {
+        width: 10px;
+        height: 3px;
+        top:-7px
+    }
+    .portfolioWrap nav span.active:after {
+        top:-7px
     }
     .portfolioWrap .listWrap a {
         width: 48%;
