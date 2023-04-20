@@ -1,0 +1,774 @@
+
+/* /// main  /// */
+.mainArea {
+	width: 100%;
+	height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+	height: calc(var(--vh, 1vh) * 100);
+	display: table;
+	background-color: #f0f2f6;
+	overflow: hidden;
+}
+
+.mainArea .mainBox {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mainArea .mainBox .mainBox-inner {
+	display:block;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.16);
+	background-color: #fff;
+	overflow: hidden;
+  }
+
+.mainArea .mainBox .mainBox-inner .imgBox {
+	width: 400px;
+	height: 800px;
+	float: left;
+}
+
+.mainArea .mainBox .mainBox-inner .imgBox img {
+	display: block;
+	width: auto;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox {
+	float: left;
+	width: 100%;
+	max-width: 880px;
+	vertical-align: middle;
+	position: relative;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner {
+	width: 100%;
+	height: 800px;
+	max-width: 426px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner a.btn-mypage {
+	font-size: 20px;
+	width: 119px;
+	height: 30px;
+	margin: 70px 0 125px;
+	border: solid 1px #ccc;
+	border-radius: 15px;
+	text-align: center;
+	float: right;
+	box-sizing: border-box;
+	line-height: 30px;
+	letter-spacing: -1px;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner a.btn-mypage.m-view {
+	display: none;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner dl {
+	clear: both;
+	margin-bottom: 60px;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner dl dt img {
+	display: block;
+	width: 100%;
+	max-width: 240px;
+	margin-bottom: 15.8px;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner dl dd {
+	font-size: 26px;
+	letter-spacing: -1.3px;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner .btn {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	text-align: Center;
+	display: block;
+	font-size: 26px;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner .btn.exchange {
+	background-color: #006d5c;
+	margin-bottom: 20px;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner .btn.renewal {
+	background-color: #cccccc;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer {
+	margin-top: 124.5px;
+	border-top: 1px solid #ccc;
+	padding-top: 30.3px;
+	line-height: 30px;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer b {
+	display: block;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer ul {
+	font-size: 0;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer ul li {
+	font-size: 18px;
+	display: inline-block;
+	letter-spacing: -1px;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer ul li:first-child {
+	position: relative;
+}
+
+.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer ul li:first-child:after {
+	display: inline-block;
+	content: "";
+	width:1px;
+	height: 18px;
+	background: #999;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+.subWrap {
+	width: 100%;
+}
+
+.subWrap .subTop{
+	width: 100%;
+	max-width: 690px;
+	margin: 0 auto;
+	padding: 76px 0 44.6px;
+}
+
+.subWrap .subTop h1 a img {
+	display: block;
+	width: 100%;
+	max-width: 160px;
+	margin-bottom: 32.4px;
+}
+
+.subWrap .subTop dl {
+	line-height: 40px;
+}
+.subWrap .subTop dl.title-exchange {
+	background: url(/images/sub/exchange-title-img.png) right center no-repeat;
+}
+.subWrap .subTop dl.title-phoneNumber {
+	background: url(/images/sub/phoneNumber-title-img.png) right center no-repeat;
+}
+.subWrap .subTop dl.title-mypage {
+	background: url(/images/sub/mypage-title-img.png) right center no-repeat;
+}
+.subWrap .subTop dl.title-renewal {
+	background: url(/images/sub/renewal-title-img.png) right center no-repeat;
+	background-size: 76.4px;
+}
+.subWrap .subTop dl.title-agree {
+	background: url(/images/sub/agree-title-img.png) right center no-repeat;
+	background-size: 65px;
+}
+.subWrap .subTop dl dt {
+	font-size: 30px;
+	font-family: 'notoBold';
+}
+
+.subWrap .subTop dl dd {
+	font-size: 24px;
+	color: #999999;
+	font-family: 'notoRegular';
+}
+
+.subWrap .subCon {
+	width: 100%;
+	border-top: 1px solid #ccc;
+	padding: 60px 0 0 0;
+}
+
+.subWrap .subCon .inner {
+	width: 100%;
+	max-width: 690px;
+	margin: 0 auto;
+}
+
+.subWrap .subCon .inner .agreeChk {
+	font-size: 24px;
+	letter-spacing: -1.2px;
+	line-height: 28px;
+	position: relative;
+}
+
+.subWrap .subCon .inner .agreeChk a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: solid 2px #006d5c;
+	box-sizing: border-box;
+	width: 119px;
+	height: 30px;
+	display: block;
+	color: #006d5c;
+	font-size: 18px;
+	text-align: center;
+	line-height: 28px;
+	border-radius: 15px;
+}
+
+.subWrap .subCon .inner .agreeChk input[type="checkbox"] {
+	position:absolute;
+	width:1px;
+	height:1px;
+	padding:0;
+	margin:-1px;
+	overflow:hidden;
+	clip:rect(0,0,0,0);
+	border:0;
+}
+
+.subWrap .subCon .inner .agreeChk input[type="checkbox"] + label {
+	display:inline-block;
+	position:relative;
+	padding-left:48px;
+	cursor:pointer;
+}
+
+.subWrap .subCon .inner .agreeChk input[type="checkbox"] + label:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:-1px;
+	width:30px;
+	height:30px;
+	background:url(/images/sub/chk-off.png) center center no-repeat;
+	background-size: 28px;
+}
+
+.subWrap .subCon .inner .agreeChk input[type="checkbox"]:checked + label:after {
+	content: '';
+	position:absolute;
+	top:-1px;
+	left:0;
+	width:30px;
+	height:30px;
+	background:url(/images/sub/chk-on.png) center center no-repeat;
+	background-size: 28px;
+}
+
+
+.subWrap .subCon .inner .agreeChk .mb40 {
+	margin-bottom: 40px;
+}
+
+.subWrap .subCon .inner .formBox {
+	margin: 60px 0 0 0;
+}
+
+.subWrap .subCon .inner .formBox > b {
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.subWrap .subCon .inner .formBox ul li {
+	margin-bottom: 40px;
+	font-size: 0;
+}
+
+.subWrap .subCon .inner .formBox ul li div {
+	width: 70%;
+	height: 60px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	vertical-align: middle;
+	margin-right: 4%;
+	position: relative;
+	overflow: hidden;
+}
+
+.subWrap .subCon .inner .formBox ul li div mark {
+	position: absolute;
+	top: 0;
+	right: 30px;
+	line-height: 60px;
+	color: #da1a32;
+	font-size: 24px;
+	background: none;
+}
+
+.subWrap .subCon .inner .formBox ul li p {
+	margin-top: 20px;
+	font-size: 24px;
+	color: #da1a32;
+}
+
+.subWrap .subCon .inner .formBox ul li div input[type="text"] {
+	border: 0;
+	background: url() #fff;
+	border-radius: 0;
+	width: 100%;
+	padding: 0 30px;
+	color: #000;
+	font-size: 24px;
+	height: 58px;
+	line-height: 58px;
+	box-sizing: border-box;
+}
+
+.subWrap .subCon .inner .formBox ul li button {
+	width: 26%;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	background: #006d5c;
+	text-align: center;
+	display: inline-block;
+	font-size: 24px;
+}
+
+.subWrap .subCon .inner .formBox .agreeChk {
+	margin-bottom: 20px;
+}
+
+.subWrap .subCon .inner .btnBox {
+	text-align: center;
+	font-size: 0;
+	margin: 70px auto 150px;
+}
+
+.subWrap .subCon .inner .btnBox a {
+	display: inline-block;
+	width:48.7%;
+	box-sizing: border-box;
+	font-size: 24px;
+	letter-spacing: -0.72px;
+	line-height: 60px;
+	height: 60px;
+}
+
+.subWrap .subCon .inner .btnBox a.btn-confirm {
+	border:1px solid #006d5c;
+	color: #006d5c;
+}
+
+.subWrap .subCon .inner .btnBox a.btn-main {
+	background: #006d5c;
+	color: #fff;
+}
+
+.subWrap .subCon .inner .btnBox a:first-child {
+	margin-right: 2.6%;
+}
+
+.subWrap .subCon .inner .btnBox a.btn-full {
+	width: 100%;
+	margin-right: 0;
+}
+
+.subWrap footer {
+	text-align: center;
+	color: #fff;
+	background: #000;
+	box-sizing: border-box;
+	padding: 40px 0;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.subWrap footer b {
+	font-weight: 400;
+}
+
+.subWrap footer ul li {
+	text-align: center;
+	display: inline-block;
+	font-weight: 300;
+}
+
+.subWrap footer ul li:first-child:after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 1px;
+	height: 18px;
+	background: #fff;
+	margin: 0 7px 0 10px
+}
+
+.subWrap .subCon .inner .renewalBox {
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	padding: 25px;
+	margin-bottom: 40px;
+}
+
+.subWrap .subCon .inner .renewalBox .agreeChk  {
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 24.5px;
+	margin-bottom: 24.5px;
+	font-size: 26px;
+}
+.subWrap .subCon .inner .renewalBox .agreeChk p {
+	float: left;
+}
+
+.subWrap .subCon .inner .renewalBox .agreeChk mark {
+	color: #006d5c;
+	letter-spacing: -1.3px;
+	display: block;
+	float: right;
+}
+
+.subWrap .subCon .inner .renewalBox .product-detail {
+	width: 100%;
+	display: table;
+}
+
+.subWrap .subCon .inner .renewalBox .product-detail li.img {
+	display: table-cell;
+	vertical-align: top;
+	width: 150px;
+}
+
+.subWrap .subCon .inner .renewalBox .product-detail li.img img {
+	display: block;
+	max-width: 150px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	margin-right: 25px;
+}
+.subWrap .subCon .inner .renewalBox .product-detail li.txt {
+	display: table-cell;
+	vertical-align: top;
+	width: 100%;
+}
+
+.subWrap .subCon .inner .renewalBox .product-detail li.txt p {
+	color: #000;
+	margin: 0 0 15px 0;
+	line-height: 30px;
+}
+
+.subWrap .subCon .inner .renewalBox .product-detail li div {
+	border: 0;
+	width: 100%;
+	margin: 0;
+}
+
+
+.subWrap .subCon .inner.agreeWrap dl dt {
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: -1.2px;
+	margin-bottom: 20px;
+}
+
+.subWrap .subCon .inner.agreeWrap dl dd {
+	color: #222;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 40px;
+}
+
+.subWrap .subCon .inner.agreeWrap dl dd mark {
+	display: block;
+	font-size: 24px;
+	margin-bottom: 24px;
+}
+
+.subWrap .subCon .inner.prevAgree {
+	box-sizing: border-box;
+	border-top: 1px solid #ccc;
+	padding:40px 0;
+}
+
+.subWrap .subCon .inner.prevAgree select {
+	max-width: 325px;
+	width: 100%;
+	height: 60px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	line-height: 58px;
+	font-size: 24px;
+	text-indent: 30px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url(/images/sub/arrow-down.png) no-repeat 90% 50%;
+	color: #000;
+}
+
+	/* IE 10, 11의 네이티브 화살표 숨기기 */
+	.subWrap .subCon .inner.prevAgree select::-ms-expand {
+	    display: none;
+	}
+
+
+
+/* /// mediaQuery ///*/
+@media screen and (min-width: 375px) and (max-width:1279px) {
+	.mainArea .mainBox .mainBox-inner {
+		box-shadow: none;
+	}
+	.mainArea .mainBox .mainBox-inner .imgBox {
+		display: none;
+	}
+	.mainArea .mainBox .mainBox-inner .kasperskyBox {
+		height: auto;
+		max-width: 380px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		padding: 0 50px;
+		display: table;
+		float: none;
+	}
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner {
+		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--vh, 1vh) * 100);
+		max-width: 380px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner dl dt img {
+		max-width: 220px;
+		margin-bottom: 10px;
+	}
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner dl dd {
+		font-size: 18px;
+	}
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner .btn {
+		font-size: 20px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner .btn.renewal {
+		margin-bottom: 60.2px;
+	}
+
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner a.btn-mypage.web-view {
+		display: none;
+	}
+
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner a.btn-mypage.m-view {
+		display: block;
+		float: left;
+		margin: 0 0 136px;
+	}
+
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer,
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer b {
+		margin: 0;
+		clear: both;
+		text-align: center;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer ul li {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.mainArea .mainBox .mainBox-inner .kasperskyBox .inner footer ul li:first-child:after {
+		display: none;
+	}
+
+	/* /// 교환하기 /// */
+	.subWrap {
+		width: 100%;
+		height: auto;
+	}
+	.subWrap .subTop {
+		padding: 20px 20px 30px;
+		max-width: 100%;
+	}
+	.subWrap .subTop dl {
+		line-height: 34px;
+	}
+	.subWrap .subTop dl.title-exchange,
+	.subWrap .subTop dl.title-phoneNumber,
+	.subWrap .subTop dl.title-mypage,
+	.subWrap .subTop dl.title-renewal,
+	.subWrap .subTop dl.title-agree {
+		background: none;
+	}
+	.subWrap .subTop h1 a img {
+		max-width: 140px;
+		margin-bottom: 64.2px;
+	}
+	.subWrap .subTop dl dt {
+		font-size: 26px;
+	}
+	.subWrap .subTop dl dd {
+		font-size: 20px;
+	}
+	.subWrap .subCon {
+		padding-top: 30px;
+	}
+	.subWrap .subCon .inner {
+		box-sizing: border-box;
+		padding: 0 20px;
+		max-width: 100%;
+	}
+	.subWrap .subCon .inner .agreeChk {
+		font-size: 18px;
+	}
+	.subWrap .subCon .inner .agreeChk a {
+		width: 96px;
+		font-size: 16px;
+		border-width: 1px;
+		line-height: 30px;
+	}
+	.subWrap .subCon .inner .agreeChk input[type="checkbox"] + label {
+		padding-left: 40px;
+	}
+	.subWrap .subCon .inner .agreeChk input[type="checkbox"] + label:before,
+	.subWrap .subCon .inner .agreeChk input[type="checkbox"]:checked + label:after {
+		width: 30px;
+		height: 30px;
+		background-size: 30px;
+	}
+	.subWrap .subCon .inner .formBox > b {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.subWrap .subCon .inner .formBox ul li {
+		margin-bottom: 20px;
+	}
+	.subWrap .subCon .inner .formBox ul li div {
+		height: 50px;
+		width: 73%;
+		margin-right: 1%;
+	}
+	.subWrap .subCon .inner .formBox ul li div input[type="text"] {
+		font-size: 16px;
+		height: 48px;
+		line-height: 48px;
+		padding: 0 20px;
+	}
+	.subWrap .subCon .inner .formBox ul li button {
+		height: 50px;
+		line-height: 50px;
+		font-size: 18px;
+	}
+	.subWrap .subCon .inner .formBox ul li div mark {
+		line-height: 50px;
+		font-size: 18px;
+	}
+	.subWrap .subCon .inner .formBox ul li p {
+		font-size: 18px;
+	}
+	.subWrap .subCon .inner .btnBox a {
+		font-size: 20px;
+	}
+	.subWrap footer {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.subWrap footer ul li {
+		display: block;
+	}
+	.subWrap footer ul li:first-child:after {
+		display: none;
+	}
+	.subWrap .subCon .inner .renewalBox .agreeChk{
+		position: relative;
+		padding-bottom: 17.5px;
+		margin-bottom: 17.5px;
+	}
+
+	.subWrap .subCon .inner .renewalBox .agreeChk p {
+		font-size: 18px;
+		float: none;
+		padding-top: 2px;
+	}
+	.subWrap .subCon .inner .renewalBox .agreeChk p span {
+		display: inline-block;
+		margin-top: 25px;
+	}
+	.subWrap .subCon .inner .renewalBox .product-detail li.txt p {
+		font-size: 13px;
+		line-height: 17px;
+		margin-bottom: 4px;
+	}
+
+	.subWrap .subCon .inner .renewalBox .agreeChk mark {
+		float: none;
+		position: absolute;
+		top: 0;
+		left: 40px;
+		font-size:14px;
+	}
+	.subWrap .subCon .inner .renewalBox .product-detail li.img img {
+		max-width: 70px;
+		margin-right: 8px;
+	}
+	.subWrap .subCon .inner .renewalBox .product-detail li div.btnBox {
+		height: 28px;
+	}
+	.subWrap .subCon .inner .renewalBox .product-detail li div.btnBox a {
+		height: 28px;
+		line-height: 28px;
+		font-size: 15px;
+	}
+
+	.subWrap .subCon .inner.agreeWrap dl dt {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.subWrap .subCon .inner.agreeWrap dl dd{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.subWrap .subCon .inner.agreeWrap dl dd mark {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.subWrap .subCon .inner.prevAgree {
+		border-top: 10px solid #f6f8fa;
+	}
+	.subWrap .subCon .inner.prevAgree select {
+		width: calc(100% - 40px);
+		max-width: 100%;
+		margin-left: 20px;
+		border: 0;
+		border-bottom: 1px solid #ccc;
+		text-indent: 0;
+		background-position: right center;
+		font-size: 20px;
+		height: 45px;
+		line-height: 45px;
+		background-size: 12px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

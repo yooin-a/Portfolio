@@ -1,0 +1,83 @@
+.designPopup {
+    width: 100%;
+    height:auto;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+.designPopup .title {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom:30px;
+}
+
+.designPopup .title mark {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right:10px;
+    background-color:black;
+    color:#fff;
+    padding:15px 15px 17px;
+    border-radius: 50%;
+}
+
+.designPopup .listWrap {
+    margin-bottom:100px;
+}
+
+.designPopup .listWrap:last-child {
+    margin-bottom: 0;
+}
+
+.designPopup .listWrap ul {
+    width: 100%;
+    height: auto;
+    padding-bottom:15px;
+    overflow-x: scroll;
+    white-space:nowrap;
+    box-sizing: border-box;
+    padding: 10px;
+    background:#fff
+}
+
+.designPopup .listWrap ul li {
+    display: inline-block;
+    width: 32%;
+    margin-right:5px;
+    vertical-align: top;
+}
+
+.designPopup .listWrap ul li:last-child {
+    margin-right: 0;
+}
+
+.designPopup .listWrap ul li img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/* /// mediaQuery - mobile(767px~320px) /// */
+@media screen and (min-width:320px) and (max-width:767px) {
+    .designPopup {
+        padding: 20px;
+    }
+    .designPopup .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .designPopup .title mark {
+        font-size: 11px;
+        padding:6px 9px 8px
+    }
+
+    .designPopup .listWrap {
+        margin-bottom: 50px;
+    }
+
+    .designPopup .listWrap ul li {
+        width: 45%;
+    }
+}

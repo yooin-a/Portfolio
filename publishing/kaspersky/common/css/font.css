@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*=================================================================================
+ * Font
+ =================================================================================*/
+@font-face {
+    font-family: 'notoBold';
+	font-weight: normal;
+    font-style: normal;
+    src: url('../../fonts/notosanskr-bold.eot');
+    src: url('../../fonts/notosanskr-bold.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/notosanskr-bold.woff2') format('woff2'),
+         url('../../fonts/notosanskr-bold.woff') format('woff'),
+         url('../../fonts/notosanskr-bold.ttf') format('truetype'),
+         url('../../fonts/notosanskr-bold.svg#notokr-bold') format('svg');
+}
+
+@font-face {
+    font-family: 'notoMedium';
+	font-weight: normal;
+    font-style: normal;
+    src: url('../../fonts/notosanskr-medium.eot');
+    src: url('../../fonts/notosanskr-medium.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/notosanskr-medium.woff2') format('woff2'),
+         url('../../fonts/notosanskr-medium.woff') format('woff'),
+         url('../../fonts/notosanskr-medium.ttf') format('truetype'),
+         url('../../fonts/notosanskr-medium.svg#notokr-medium') format('svg');
+}
+
+@font-face {
+    font-family: 'notoRegular';
+	font-weight: normal;
+    font-style: normal;
+    src: url('../../fonts/notosanskr-regular.eot');
+    src: url('../../fonts/notosanskr-regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/notosanskr-regular.woff2') format('woff2'),
+         url('../../fonts/notosanskr-regular.woff') format('woff'),
+         url('../../fonts/notosanskr-regular.ttf') format('truetype'),
+         url('../../fonts/notosanskr-regular.svg#notokr-regular') format('svg');
+}

@@ -6,8 +6,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="유인아 Portfolio" />
     <meta property="og:site_name" content="유인아 Portfolio" />
-    <meta property="og:url" content="http://newina.dothome.co.kr" />
-    <meta property="og:image" content="http://newina.dothome.co.kr/images/Portfolio-thumbNail.jpg" />
+    <meta property="og:url" content="https://yooin-a.github.io/Portfolio/" />
+    <meta property="og:image" content="Portfolio-thumbNail.jpg" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="400" />
     <title>Portfolio : Y00INA </title>
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="common/css/default.css">
     <link rel="stylesheet" href="common/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
@@ -46,10 +47,50 @@
                 <span class="filter" data-filter=".mobile">Mobile</span>
                 <span class="filter" data-filter=".app">App</span>
                 <span class="filter" data-filter=".design">Design</span>
-                <span class="filter" data-filter=".etc">etc</span>
             </nav>
 
             <div class="listWrap">
+
+                <a href="#modal3" rel="modal:open" class="portfolio all design" data-cat="all, design">
+                    <figure><img src="images/thumb_place.png" alt=""></figure>
+                    <dl>
+                        <dt>Android | 플레이스 화면 디자인</dt>
+                        <dd>VP브이피</dd>
+                    </dl>
+                </a>
+
+                <a href="#modal2" rel="modal:open" class="portfolio all design" data-cat="all, design">
+                    <figure><img src="images/thumb_spcare.png" alt=""></figure>
+                    <dl>
+                        <dt>카드사 라이프 쇼핑케어 디자인</dt>
+                        <dd>VP브이피</dd>
+                    </dl>
+                </a>
+                
+                <a href="#modal1" rel="modal:open" class="portfolio all design" data-cat="all, design">
+                    <figure><img src="images/thumb_safetypay_design.png" alt=""></figure>
+                    <dl>
+                        <dt>스마트안전결제 디자인</dt>
+                        <dd>VP브이피</dd>
+                    </dl>
+                </a>
+
+                <a href="./publishing/nft-bisket/index.html" target="_blank" class="portfolio all web mobile design" data-cat="all, web, mobile, design">
+                    <figure><img src="images/thumb_NFT.png" alt=""></figure>
+                    <dl>
+                        <dt>NFT 아트 플랫폼 | 결제페이지</dt>
+                        <dd>BISKET X VP브이피</dd>
+                    </dl>
+                </a>
+
+                <a href="./publishing/kaspersky/index.html" target="_blank" class="portfolio all web mobile" data-cat="all, web, mobile">
+                    <figure><img src="images/thumb_kaspersky.png" alt=""></figure>
+                    <dl>
+                        <dt>Kaspersky</dt>
+                        <dd>한국선불카드</dd>
+                    </dl>
+                </a>
+
                 <a href="https://safetypay.co.kr/" target="_blank" title="새창열림" class="portfolio all web mobile" data-cat="all, web, mobile">
                     <figure><img src="images/thumb_safetypay.png" alt=""></figure>
                     <dl>
@@ -57,7 +98,6 @@
                         <dd>스마트안전결제</dd>
                     </dl>
                 </a>
-                <!-- vp : 2021~2022 -->
 
                 <a href="https://www.ikifi.com/" target="_blank" title="새창열림" class="portfolio all web mobile" data-cat="all, web, mobile">
                     <figure><img src="images/thumb_ikifi.png" alt=""></figure>
@@ -75,13 +115,30 @@
                     </dl>
                 </a>
 
-                <a href="https://aijobfair.or.kr/" target="_blank" title="새창열림" class="portfolio all web mobile" data-cat="all, web, mobile">
+                <a href="#modal4" rel="modal:open" class="portfolio all design" data-cat="all, design">
+                    <figure><img src="images/thumb_tshirt.png" alt=""></figure>
+                    <dl>
+                        <dt>프린팅티셔츠 디자인</dt>
+                        <dd>자체제작</dd>
+                    </dl>
+                </a>
+
+                <a href="https://dicia.aijobfair.or.kr/interviewer/login.php" target="_blank" title="새창열림" class="portfolio all web mobile" data-cat="all, web, mobile">
                     <figure><img src="images/thumb_AI.png" alt=""></figure>
                     <dl>
                         <dt>AI잡페어 웹사이트</dt>
                         <dd>KAIT 한국정보통신진흥협회</dd>
                     </dl>
                 </a>
+                
+                <a href="http://iloveyou.lifeline.or.kr/index.asp" target="_blank" title="새창열림" class="portfolio all web" data-cat="all, web">
+                    <figure><img src="images/thumb_lifelineSchool.png" alt=""></figure>
+                    <dl>
+                        <dt>LIFELINE SCHOOL</dt>
+                        <dd>한국생명의전화</dd>
+                    </dl>
+                </a>
+
                 <a href="http://onesteponelife.com/" target="_blank" title="새창열림" class="portfolio all web mobile" data-cat="all, web, mobile">
                     <figure><img src="images/thumb_onesteponelife.png" alt=""></figure>
                     <dl>
@@ -89,7 +146,7 @@
                         <dd>한국생명의전화</dd>
                     </dl>
                 </a>
-                <a href="https://www.1393kfsp.or.kr/login.php" target="_blank" title="새창열림" class="portfolio all web mobile app" data-cat="all, web, mobile, app">
+                <a href="http://119.205.211.228:7048/login.php" target="_blank" title="새창열림" class="portfolio all web mobile app" data-cat="all, web, mobile, app">
                     <figure><img src="images/thumb_1393.png" alt=""></figure>
                     <dl>
                         <dt>1393 자원봉사센터 반응형 웹·앱</dt>
@@ -259,7 +316,7 @@
         </div>
 
         <div class="btnResume">
-            <a href="#" download><span>Resume</span></a>
+            <a href="./230420_resume.pdf" download><span>Resume</span></a>
         </div>
 
         <!-- popup-profile -->
@@ -267,21 +324,37 @@
             <div class="inner">
                 <button class="btnPopup close"></button>
                 <p class="title">My Profile</p>
-                <div class="photo">
-                  <video muted autoplay loop playsinline>
-                    <source src="images/profile.mp4" type="video/mp4">
-                  </video>
-                </div>
+                <div class="photo"><img src="images/profile_img.jpg" alt=""></div>
                 <ul>
                     <li><b>Name</b><span>yoo in-a</span></li>
                     <li><b>Job</b><span>Webpublisher</span></li>
                     <li><b>Career</b><span>2014. 06 ~</span></li>
                 </ul>
-                <a href="#" download>Resume</a>
+                <a href="./230420_resume.pdf" download>Resume</a>
             </div>
         </div>
         <!-- // popup-profile -->
     </div>
+
+
+
+    <div id="modal1" class="modal design-popup">
+        <iframe src="design/vp/safetypay/index.html"></iframe>
+    </div>
+
+    <div id="modal2" class="modal design-popup">
+        <iframe src="design/vp/spcare/index.html"></iframe>
+    </div>
+
+    <div id="modal3" class="modal design-popup">
+        <iframe src="design/vp/place/index.html"></iframe>
+    </div>
+
+
+    <div id="modal4" class="modal design-popup">
+        <iframe src="design/t-shirt/index.html"></iframe>
+    </div>
+
 </body>
 </html>
 
@@ -310,6 +383,7 @@
             filterList.init();
         });
     </script>
+
 <!-- //script -->
 
 
