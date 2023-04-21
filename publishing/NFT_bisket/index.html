@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BISKET x VP</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- wrap -->
+    <div class="wrap">
+      <h1 class="title">결제하기</h1>
+
+      <div class="content">
+
+        <section class="product-wrap">
+          <p class="title">NFT 아트 상품 정보</p>
+          <div class="detail">
+            <div class="thumbnail"><img src="./images/thumb.png" alt=""></div>
+            <ul class="info">
+              <li><b>작품명</b>NFT Art Gallery In ANDAZ X BISKET</li>
+              <li><b>작가명</b>레지나 킴</li>
+              <li><b>총 Edition</b>1</li>
+              <li><b>판매 중 Edition</b>1</li>
+              <li><b>가격</b>2,500,000원</li>
+              <li class="explanation">
+                  <b>작품설명</b>
+                  <div class="box">
+                    <p class="con">해당 작품에 대한 간략한 소개 및 설명이 들어 갈 부분(미피랩스 API에서 NFT아트 상품 정보 불러 올 예정) 해당 작품에 대한 간략한 소개 및 설명이 들어 갈 부분(미피랩스 API에서 NFT아트 상품 정보 불러 올 예정)해당 작품에 대한 간략한 소개 및 설명이 들어 갈 부분(미피랩스 API에서 NFT아트 상품 정보 불러 올 예정) 해당 작품에 대한 간략한 소개 및 설명이 들어 갈 부분(미피랩스 API에서 NFT아트 상품 정보 불러 올 예정)</p>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <script>
+          $(document).ready(function(){
+
+            $('.box').each(function(){
+                var content = $(this).children('.explanation .con');
+                var content_txt = content.text();
+                var content_txt_short = content_txt.substring(0,80)+"...";
+                var btn_more = $('<a href="javascript:void(0)" class="more"><span class="hidden">더보기</span></a>');
+
+                
+                $(this).append(btn_more);
+                
+                if(content_txt.length >= 100){
+                    content.html(content_txt_short)
+                    
+                }else{
+                    btn_more.hide()
+                }
+                
+                btn_more.click(toggle_content);
+                // 아래 bind가 안 되는 이유는??
+                // btn_more.bind('click',toggle_content);
+
+                function toggle_content(){
+                    if($(this).hasClass('short')){
+                        // 접기 상태
+                        //$(this).html('더보기');
+                        content.html(content_txt_short)
+                        $(this).removeClass('short');
+                    }else{
+                        // 더보기 상태
+                        //$(this).html('접기');
+                        content.html(content_txt);
+                        $(this).addClass('short');
+
+                    }
+                }
+            });
+          });          
+        </script>
+
+        <section class="form-wrap">
+          <p class="title">구매자 본인인증</p>
+          <div>
+            <label for="name"></label>
+            <input id="name" type="text" placeholder="성명" aria-label="name" aria-describedby="name" onkeyup="setName();"/>
+          </div>
+
+          <div>
+            <label for="birth"></label>
+            <input id="birth" type="text" placeholder="생년월일(8자리)" aria-label="birth" aria-describedby="birth" onkeyup="setBirth();" />
+          </div>
+
+          <div>
+            <ul>
+              <li>
+                <input id="male" type="radio" name="gender" value="0" onclick="setGender(event);" checked />
+                <label for="male">남</label>
+              </li>
+              <li>
+                <input id="female" class="form-check-input" type="radio" name="gender" value="1" onclick="setGender(event);" />
+                <label for="female">여</label>              
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>
+                  <input id="korean" class="form-check-input" type="radio" name="nationality" value="0" onclick="setNationality(event);" checked />
+                  <label class="form-check-label" for="korean">내국인</label>              
+              </li>
+              <li>
+                  <input id="foriegner" class="form-check-input" type="radio" name="nationality" value="1" onclick="setNationality(event);"/>
+                  <label class="form-check-label" for="foriegner">외국인</label>              
+              </li>
+            </ul>
+          </div>
+
+          <div class="telecom-area">
+            <div class="inner">
+              <label for="selfCheck_telecom"></label>
+              <select name="telecom" id="selfCheck_telecom">
+                <option value="" selected="">통신사 선택</option>
+                <option value="SKT">SKT</option>
+                <option value="KTF">KT</option>
+                <option value="LGT">LG U+</option>
+                <option value="SKM">SKT알뜰폰</option>
+                <option value="KTM">KT알뜰폰</option>
+                <option value="LGM">LG알뜰폰</option>
+              </select>
+
+              <label for="phoneNum1"></label>
+              <select name="phoneNum1" id="phoneNum1">
+                <option value="010" selected="">010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+              </select>
+
+              <label for="phoneNum2">
+                <input type="number" id="phoneNum" placeholder="휴대폰 번호 입력">
+              </label>
+            </div>
+            <button>인증번호 전송</button>          
+          </div>
+
+
+          <section class="agree-wrap">
+            <p class="title">약관동의</p>
+            <div class="inner">
+  
+              <div class="chkbox_group">
+                <div>
+                    <input type="checkbox" id="chk_all" name="agreement" value="selectAll">
+                    <label for="chk_all"><span></span>전체동의</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="chk" id="chk1" name="agreement" value="terms1">
+                    <label for="chk1"><span></span>개인정보 수집 및 이용 동의(필수)</label>
+                    <a href="#none" class="view_more"><span class="hidden">자세히보기</span></a>
+                    <div class="iframe-wrap">
+                      <iframe src="https://www.kmcert.com/kmcis/comm/kmcisHpAgree_SKT.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" class="chk" id="chk2" name="agreement" value="terms2">
+                    <label for="chk2"><span></span>고유식별 정보처리 동의(필수)</label>
+                    <a href="#none" class="view_more"><span class="hidden">자세히보기</span></a>
+                    <div class="iframe-wrap">
+                      <iframe src="https://www.kmcert.com/kmcis/comm/kmcisHpAgree_SKT.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div>          
+                    <input type="checkbox" class="chk" id="chk3" name="agreement" value="terms3">                
+                    <label for="chk3"><span></span>통신사 이용약관 동의(필수)</label>
+                    <a href="#none" class="view_more"><span class="hidden">자세히보기</span></a>
+                    <div class="iframe-wrap">
+                      <iframe src="https://www.kmcert.com/kmcis/comm/kmcisHpAgree_SKT.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div>
+                  <input type="checkbox" class="chk" id="chk4" name="agreement" value="terms4">
+                  <label for="chk4"><span></span>서비스 이용약관 동의(필수)</label>
+                  <a href="#none" class="view_more"><span class="hidden">자세히보기</span></a>
+                  <div class="iframe-wrap">
+                    <iframe src="https://www.kmcert.com/kmcis/comm/kmcisHpAgree_SKT.html" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </section>
+
+
+          <div class="authNum-area">
+            <div class="inner">
+              <label for="authNum">
+                <input type="number" id="authNum" placeholder="인증번호입력">
+                <span>03:00</span>
+              </label>
+            </div>
+            <button>확인</button>
+          </div>
+        </section>
+
+
+        <section class="form-wrap">
+          <p class="title">결제수단 선택</p>
+          <div class="join-certi">
+            <ul>
+              <li>
+                  <input type="radio" id="card" name="pay-method" class="input-radio" checked="checked" value="CARD">
+                  <label for="card">신용카드</label>
+              </li>
+              <li>
+                  <input type="radio" id="vbank" name="pay-method" class="input-radio" value="VBANK">
+                  <label for="vbank">가상계좌</label>
+              </li>
+              <li>
+                  <input type="radio" id="bank" name="pay-method" class="input-radio" value="BANK">
+                  <label for="bank">계좌이체</label>
+              </li>
+          </ul>
+        </section>
+
+        <div class="button-wrap">
+          <a href="./payment.html" id="btn_certi">결제하기</a>
+        </div>
+
+      </div>
+
+
+
+    <!-- footer -->
+    <footer>
+      <div class="inner">
+        <p class="title">시법사업참여사</p>
+        <div class="detail">
+          <ul>
+            <li><span>NFT 아트 콘텐츠 제공사</span>주식회사 미피랩스(BISKET)</li>
+            <li><span>아트 갤러리 제공사</span>호텔 안다즈 서울강남</li>
+            <li><span>NFT 인증결제사</span>브이피 주식회사</li>
+          </ul>
+        </div>
+
+        <ul class="address">
+          <li><b>상호</b>브이피 주식회사<b class="ml-10">사업자 번호</b>220-81-89229</li>
+          <li><b>대표자명</b>김진국<b class="ml-10">연락처</b><a href="tel:02-2184-4457">02-2184-4457(NFT사업팀)</a></li>
+          <li><b>주소</b>서울특별시 중구 을지로 170, 동관 13층(을지로4가, 을지트윈타워)</li>
+        </ul>
+      </div>
+    </footer><!-- //footer -->
+
+
+    </div><!-- //wrap -->
+  </body>
+</html>
+
+<script>
+  //*약관동의 > 체크박스
+  $('.chkbox_group').on('click', '#chk_all', function() {
+    console.log(this);
+    const checked = $(this).is(':checked');
+
+    if (checked) {
+      $(this).parents('.chkbox_group').find('input').prop('checked', true);
+    } else {
+      $(this).parents('.chkbox_group').find('input').prop('checked', false);
+    }
+  });
+
+  $('.chkbox_group').on('click', '.chk', function() {
+    let is_checked = true;
+
+    $('.chkbox_group .chk').each(function() {
+      is_checked = is_checked && $(this).is(':checked');
+    });
+
+    $('#chk_all').prop('checked', is_checked);
+  });
+
+  //*약관동의 > iframe
+  $('.view_more').click(function(){
+    $(this).toggleClass('active');
+    $(this).siblings('.iframe-wrap').slideToggle(0);
+  }); 
+</script>
+

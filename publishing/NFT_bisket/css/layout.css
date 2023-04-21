@@ -1,0 +1,727 @@
+@import url(default.css);
+
+
+h1.title {
+	font-size: 24px;
+	line-height: 32px;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 25px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+}
+
+.content {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 45px 0;
+}
+
+.product-wrap {
+	width: 100%;
+	height: auto;
+}
+
+.product-wrap .title {
+	font-size: 21px;
+	font-weight: 600;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+
+.product-wrap .title:before {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 20px;
+	background-color: #000;
+	position: absolute;
+	left: 0;
+	top: 3px;
+	border-radius: 5px;
+}
+
+.product-wrap .detail {
+	width: 100%;
+	display: table;
+	vertical-align: middle;
+	margin-bottom: 45px;
+}
+
+.product-wrap .detail .thumbnail {
+	display: table-cell;
+	width: 40%;
+	/*vertical-align: middle;*/
+}
+.product-wrap .detail .thumbnail img {
+	display: block;
+	vertical-align: top;
+	width: auto;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.product-wrap .detail .info {
+	display: table-cell;
+	vertical-align: middle;
+	width: 60%;
+	font-size: 18px;
+	line-height: 41px;
+	box-sizing: border-box;
+	padding: 0 0 0 45px;
+}
+
+.product-wrap .detail .info b {
+	display: inline-block;
+	width: 145px;
+}
+
+.product-wrap .detail .info li.explanation {
+	/*background-color: rgba(0,0,0,0.03);*/
+	border: 1px solid #e1e1e1;
+	box-sizing: border-box;
+	padding: 15px 20px 12px;
+	margin-top: 15px;
+	border-radius: 15px;
+}
+
+
+.product-wrap .detail .info li.explanation div {
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 5px;
+}
+
+.product-wrap .detail .info li.explanation b {
+	display: block;
+	line-height: 26px;
+}
+
+.product-wrap .detail .info li.explanation .box .more {
+	width: 100%;
+	height: 20px;
+	display:block;
+	border-top:1px dashed #e1e1e1;
+	position: relative;
+	margin-top:8px;
+	cursor: pointer;
+}
+
+.product-wrap .detail .info li.explanation .box .more:before {
+	content: "";
+	display: block;
+	margin:0 auto;
+	width: 100%;
+	height: 10px;
+	background:url(../images/select-arrow.png) center center no-repeat;
+	background-size: 15px;
+	position: absolute;
+	top:10px;
+	left:0;
+	transform: rotate(0deg);
+	opacity: 0.6;
+	/*transition: all ease .3s;*/
+}
+
+.product-wrap .detail .info li.explanation .box .more.short:before {
+	transform: rotate(180deg);
+}
+
+
+/* /// 구매자 본인인증 /// */
+.form-wrap {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.form-wrap .title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.form-wrap div {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.form-wrap > div:nth-child(odd) {
+	padding-left: 5px;
+}
+
+.form-wrap div input[type="text"],
+.form-wrap div input[type="password"] {
+	background: url() #fff;
+	border: 1px solid #ddd;
+	border-radius: 30px;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	height: 45px;
+	width: 100%;
+	font-family: "Roboto";
+	color: #666;
+	transition: all ease .3s;
+}
+
+.form-wrap div input[type="text"]:hover,
+.form-wrap div input[type="password"]:hover {
+	background-color: #f1f1f1;
+}
+
+.form-wrap div ul {
+	width: 100%;
+	overflow: hidden;
+}
+
+.form-wrap div ul li {
+	display: block;
+	width: 50%;
+	float: left;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.form-wrap div ul li input {
+	position: absolute;
+	opacity: 0;
+	margin-bottom: 0;
+	width: 0;
+	height: 0;
+}
+
+.form-wrap div ul li label {
+	border: 1px solid #ddd;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	height: 45px;
+	line-height: 43px;
+	color: #666;
+	border-radius: 30px;
+}
+
+.form-wrap div ul li input:checked+label {
+	color: #fff;
+	background: #000;
+	font-weight: bold;
+	border-color: #000;
+}
+
+.form-wrap div ul li:hover label {
+	background-color:#f1f1f1;
+}
+
+
+.form-wrap div.telecom-area {
+	float: none;
+	width: 100%
+
+}
+.form-wrap div.telecom-area .inner,
+.form-wrap div.authNum-area .inner {
+	border-radius: 30px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	height: 45px;
+	line-height: 43px;
+	padding: 0 20px;
+	overflow: hidden;
+	vertical-align: middle;
+	width: calc(100% - 155px);
+	position: relative;
+	background-color: transparent;
+	transition: all ease .3s;
+}
+
+.form-wrap div.telecom-area .inner:hover,
+.form-wrap div.authNum-area .inner:hover {
+	background-color: #f1f1f1;
+}
+
+
+.form-wrap div.telecom-area button,
+.form-wrap div.authNum-area button {
+	width: 150px;
+	height: 45px;
+	color: #fff;
+	background-color: #999;
+	border-radius: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	margin-left: 5px;
+	line-height: 45px;
+	position: relative;
+	cursor: pointer;
+}
+
+
+.form-wrap div.telecom-area button:hover,
+.form-wrap div.authNum-area button:hover {
+	background: #666;
+}
+
+.form-wrap div.authNum-area {
+	padding-left: 0;
+}
+
+.form-wrap div.telecom-area select {
+	background: url(../images/select-arrow.png) 95% center no-repeat transparent;
+	background-size: 12px;
+	border: 0;
+	width: 100px;
+	font-family: "Roboto";
+	color: #666;
+	float: left;
+	height: 43px;
+}
+
+.form-wrap div.telecom-area select#phoneNum1 {
+	text-indent: 10px;
+}
+
+.form-wrap div.telecom-area input {
+	width: calc(100% - 200px);
+	border: 0;
+	height: 43px;
+	float: left;
+	box-sizing: border-box;
+	padding: 0 20px;
+	background-color: transparent;
+}
+
+.form-wrap div.authNum-area {
+	width: 100%;
+}
+
+.form-wrap div.authNum-area span {
+	color: #ff0000;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-weight: 300;
+}
+
+.form-wrap div.authNum-area input {
+	width: 100%;
+	border: 0;
+	height: 43px;
+	box-sizing: border-box;
+	padding: 0;
+	background-color: transparent;
+}
+
+
+/* /// 약관동의 /// */
+.agree-wrap {
+	box-sizing: border-box;
+	padding:0 20px;
+	border: 1px solid rgb(221, 221, 221);
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 15px;
+	margin-bottom:10px;
+	background-color:#f9f9f9
+}
+
+.agree-wrap .title {
+	font-weight: bold;
+	margin: 15px 0 10px 0;
+	font-size: 16px;
+}
+
+.agree-wrap .inner {
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom:0
+}
+
+.agree-wrap .inner .chkbox_group {
+	width: 100%;
+}
+
+.agree-wrap .inner .chkbox_group div {
+	line-height: 34px;
+	vertical-align: middle;
+	text-indent: 3px;
+	position: relative;
+	float:none;
+	width: 100%;
+}
+
+.agree-wrap .inner .chkbox_group div:first-child {
+	margin-bottom: 7px;
+}
+.agree-wrap .inner .chkbox_group input[type="checkbox"]#chk_all,
+.agree-wrap .inner .chkbox_group input[type="checkbox"].chk {
+	display: none;
+}
+
+.agree-wrap .inner .chkbox_group input[type="checkbox"].chk {
+	line-height: 36px;
+}
+
+.agree-wrap .inner .chkbox_group input[type="checkbox"]#chk_all + label span {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	background: url(../images/checkbox-agree-off.png) center no-repeat;
+	background-size: 25px;
+	margin-top: -2px;
+	cursor: pointer;
+	opacity: .2;
+	margin-right: 5px;
+	transition: all ease .3s;
+}
+
+.agree-wrap .inner .chkbox_group input[type="checkbox"].chk + label span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	background: url(../images/checkbox-agree.png) top center no-repeat;
+	background-size: 20px;
+	cursor: pointer;
+	opacity: .2;
+	margin:0 5px 0 2px;
+	position: relative;
+	top: -2px;
+	transition: all ease .3s;
+}
+
+.agree-wrap .inner .chkbox_group input[type="checkbox"]#chk_all:checked + label span {
+	opacity: 1;
+}
+
+.agree-wrap .inner .chkbox_group input[type="checkbox"].chk:checked + label span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	background: url(../images/checkbox-agree.png) top center no-repeat;
+	background-size: 20px;
+	cursor: pointer;
+	opacity: 1;
+	margin:0 5px 0 2px;
+}
+
+.agree-wrap .inner .chkbox_group .view_more {
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: url(../images/select-arrow.png) center center no-repeat;
+	background-size: 10px;
+	opacity: 0.8;
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 8px;
+	right: 0;
+	transition: all ease .3s;
+}
+
+.agree-wrap .inner .chkbox_group .view_more.active {
+	background: url(../images/select-arrow-active.png) center center no-repeat;
+	background-size: 10px;
+	transform: rotate(0deg);
+	opacity: 1;
+}
+
+.agree-wrap .inner .chkbox_group .iframe-wrap {
+	width: 100%;
+	height: auto;
+	background-color:#eee;
+	box-sizing: border-box;
+	padding: 10px;
+	display: none;
+	border-radius:10px;
+}
+
+.agree-wrap .inner .chkbox_group .iframe-wrap iframe {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: block;
+	height: 350px;
+}
+
+
+
+
+/* /// 결제수단 선택  /// */
+.form-wrap div.join-certi {
+	width: 100%;
+	overflow: hidden;
+}
+
+.form-wrap div.join-certi ul li {
+	width: 33.333%;
+	float: left;
+	text-align: center;
+}
+.button-wrap {
+	margin-bottom: 100px;
+}
+.button-wrap a {
+	display: block;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	color: #fff;
+	background: #000;
+	box-sizing: border-box;
+	font-size: 21px;
+	border-radius: 30px;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+
+/* /// footer /// */
+footer {
+	background: #000;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 30px 0 40px;
+	color: rgba(255,255,255,0.8);
+}
+
+footer p.title {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+footer .inner {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden
+}
+
+
+footer .inner .detail {
+	font-size: 13px;
+	line-height: 24px;
+	width: 50%;
+	float: left;
+}
+
+footer .inner .detail li span {
+	color: #fff;
+	display: inline-block;
+	width: 130px;
+	position: relative;
+	margin-right: 10px;
+}
+
+
+footer .inner .detail li span:before {
+	content: "";
+	display: block;
+	width: 2px;
+	height: 15px;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	background: rgba(255,255,255,0.2);
+}
+
+footer .inner .address {
+	font-size: 13px;
+	line-height: 24px;
+}
+
+footer .inner .address li b {
+	margin-right: 10px;
+	display: inline-block;
+	color: #fff;
+}
+
+footer .inner .address li b.ml-10 {
+	margin-left: 10px;
+}
+
+footer .inner .address li a {
+	color: rgba(255,255,255,0.8);
+}
+
+
+/* 2022-04-17 가상계좌 주문완료 페이지 추가 */
+.payment {
+	width: 100%;
+	max-width: 480px;
+	margin:0 auto;
+	height: auto;
+	box-sizing: border-box;
+	padding:20px;
+	text-align: center;
+}
+
+.payment > h1 {
+	margin:30px auto;
+}
+.payment .num {
+	font-size: 21px;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.payment .info {
+	color:rgba(0,0,0,0.6);
+	display: block;
+	margin-bottom: 30px;
+}
+
+.payment .box {
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 30px;
+	margin-bottom: 15px;
+	text-align: left;
+	background:#f9f9f9;
+}
+
+.payment .title {
+	font-size: 18px;
+	font-weight: bold;
+	box-sizing: border-box;
+	text-align: left;
+	margin-bottom: 10px;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+.payment .title:before {
+	content: "";
+	display: block;
+	width: 3px;
+	height: 15px;
+	background: #000;
+	border-radius: 2px;
+	position: absolute;
+	top:5px;
+	left:0;
+}
+
+.payment .box dl {
+	border-top:1px dashed #ddd;
+	box-sizing: border-box;
+	padding: 15px 30px; 
+}
+
+
+.payment .box dl dt {
+	color:rgba(0,0,0,0.6);
+	margin-bottom:5px;
+}
+
+.payment .box dl:first-child {
+	border-top:0
+}
+
+
+@media screen and (min-width:320px) and (max-width: 680px) {
+	.content {
+		padding: 30px 20px;
+	}
+	.product-wrap .detail .thumbnail {
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.product-wrap .detail .info {
+		display: block;
+		width: 100%;
+		padding: 0;
+		font-size: 16px;
+		line-height: 28px;
+		box-sizing: border-box;
+		padding: 0 10px;
+	}
+
+	.form-wrap div.telecom-area .inner,
+	.form-wrap div.authNum-area .inner {
+		width: 100%;
+	}
+	.product-wrap .detail .info li {
+		position: relative;
+		padding-left: 120px;
+
+	}
+	.product-wrap .detail .info li b {
+		display: block;
+		width: 120px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.product-wrap .detail .info li.explanation b {
+		position: relative;
+	}
+
+	.form-wrap div.telecom-area button,
+	.form-wrap div.authNum-area button {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.form-wrap div input[type="text"],
+	.form-wrap div input[type="password"],
+	.form-wrap div ul li label,
+	.form-wrap div.telecom-area input,
+	.form-wrap div.telecom-area button,
+	.form-wrap div.authNum-area button,
+	.form-wrap div.authNum-area input {
+		font-size: 13px;
+	}
+	.form-wrap div.telecom-area select {
+		font-size: 13px;
+		width: 90px;
+	}
+	.form-wrap div.telecom-area input {
+		padding:0 5px
+	}
+
+	.agree-wrap .inner .chkbox_group div {
+		font-size:13px;
+		line-height: 24px;
+	}
+	
+	.button-wrap {
+		margin-top: -30px;
+		margin-bottom: 50px;
+	}
+	.button-wrap a {
+		font-size: 18px;
+		height: 45px;
+		line-height: 45px;
+	}
+
+	.payment .button-wrap {
+		margin-top:0
+	}
+
+	footer {
+		padding: 20px;
+	}
+	footer .inner .detail {
+		float: none;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+}
+
