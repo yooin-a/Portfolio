@@ -23,7 +23,7 @@
 }
 
 .designPopup .listWrap {
-    margin-bottom:100px;
+    margin-bottom:50px;
 }
 
 .designPopup .listWrap:last-child {
@@ -32,7 +32,7 @@
 
 .designPopup .listWrap ul {
     width: 100%;
-    height: auto;
+    height: 450px;
     padding-bottom:15px;
     overflow-x: scroll;
     white-space:nowrap;
@@ -43,7 +43,7 @@
 
 .designPopup .listWrap ul li {
     display: inline-block;
-    width: 32%;
+    width: 20%;
     margin-right:5px;
     vertical-align: top;
 }
