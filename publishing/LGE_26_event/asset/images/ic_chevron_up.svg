@@ -1,0 +1,16 @@
+<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <style>
+        .qnaArrowImg {fill:#606C80}
+        
+            @media (prefers-color-scheme: dark) {
+                .qnaArrowImg {fill:#A1ACBF}
+            }
+    </style>
+<mask id="mask0_1559_32" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
+<rect y="20.25" width="20" height="20" transform="rotate(-90 0 20.25)" fill="white"/>
+</mask>
+<g mask="url(#mask0_1559_32)">
+<path class="qnaArrowImg" fill-rule="evenodd" clip-rule="evenodd" d="M4.55806 13.1919C4.31398 12.9479 4.31398 12.5521 4.55806 12.3081L9.55806 7.30806C9.80214 7.06398 10.1979 7.06398 10.4419 7.30806L15.4419 12.3081C15.686 12.5521 15.686 12.9479 15.4419 13.1919C15.1979 13.436 14.8021 13.436 14.5581 13.1919L10 8.63417L5.44194 13.1919C5.22005 13.4138 4.87283 13.434 4.62816 13.2525L4.55806 13.1919Z" fill="currentColor"/>
+</g>
+</svg>

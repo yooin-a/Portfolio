@@ -1,0 +1,445 @@
+@import url(./reset.css);
+@import url(./bottomsheet.css);
+
+/* /// lightMode /// */
+:root {
+    --sys-color-background-variant:#EFF1F4;
+    --sys-color-surface:#ffffff;
+    --sys-on-surface:#111111;
+    --sys-color-on-surface-variant:#606C80;
+    --sys-color-ess-main:#00867E;
+    --sys-color-outline:#CAD0DD;
+    --ref-button-ess-btn:#006A63;
+    --ref-multi-color-teal-green-teal-green97:#E5FBF8;
+    --ref-color-neutral99:#F7F8FA;
+}
+
+
+/* /// logo /// */
+.wrap {
+    padding-bottom: 100px;
+}
+.wrap h1 {
+    text-align: center;
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    padding: 19px 0 0 0;
+    box-sizing: border-box;
+}
+
+.wrap h1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* /// Main Visual /// */
+.mainVisual {
+    padding: 0 20px 40px 20px;
+    background-color:#fff;
+    position: relative;
+}
+.mainVisual:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(142.29deg, #86F3BC 21.8%, #8CDDE3 73.22%);
+    opacity: 0.2;
+    transform: rotate(-180deg);
+}
+
+.mainVisual img {
+    display: block;
+    margin:0 auto;
+    position: relative;
+    z-index: 999;
+}
+
+.mainVisual .visualImg {
+    max-width: 375px;
+    margin:0 auto 16px;
+    position:relative;   
+}
+
+.mainVisual .visualImg img {
+    display: block;
+    width: 100%;
+}
+/* w335 */
+.mainVisual .visualImg #airMotion {
+    position: absolute;
+    top: 26.86%;
+    left: 50.79%;
+    width: 100%;
+    max-width: 200px;
+    z-index: 999;
+}
+
+.mainVisual .visualImg2 {
+    max-width: 335px;
+    margin:0 auto;
+}
+.mainVisual .visualImg2 img:first-child {
+    width: 79px;
+}
+
+.mainVisual .visualImg2 img:last-child {
+    width: 100%;
+    max-width: 335px;
+    margin:16px auto;
+}
+
+.mainVisual .visual_info {
+    width: 100%;
+    max-width: 335px;
+    margin:0 auto;
+}
+
+.mainVisual .visual_info div {
+    margin-bottom: 16px;
+}
+
+.mainVisual .visual_info div img {
+    width: 100%;
+    max-width: 335px;
+}
+
+.mainVisual .visual_info div:last-child {
+    margin-bottom: 0;
+}
+
+
+/* /// contents /// */
+.contents {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contents .info {
+    padding: 30px 0 32px;
+    color: var(--sys-color-on-surface-variant);
+}
+
+.contents .card {
+    background-color:var(--sys-color-surface);
+    padding: 30px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contents .cardList01{
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.contents .cardList01 .energySenseImg {
+    position:absolute;
+    top:-18px;
+    left:50%;
+    margin-left:-75px;
+}
+
+.contents .card h2,
+.qnaList h2 {
+    width: 175px;
+    color:var(--sys-color-ess-main);
+    font-size: 17px;
+    line-height:34px;
+    border-radius: 25px;
+    border:1.5px solid var(--sys-color-ess-main);
+    margin:0 auto 25px;
+    font-weight: 500;
+}
+
+.contents .card .steplist b {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 900;
+}
+.contents .card .stepText {
+    width: 100%;
+    max-width: 278px;
+    margin:0 auto;
+    font-size: 17px;
+    font-weight: 500;
+}
+.contents .card p mark {
+    color: var(--sys-color-ess-main);
+}
+.contents .card .step-info {
+    display: block;
+    color: var(--sys-color-on-surface-variant);
+    font-size: 14px;
+    margin: 8px auto 10px;
+    width: 100%;
+    max-width: 278px;
+}
+
+.thinQ-youtube p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: var(--sys-color-on-surface-variant);
+}
+
+.contents .card .steplist {
+    margin-bottom: 30px;
+}
+
+.contents .card .steplist .agreeAlertImg {
+    padding: 8px 20px 0;
+    background: rgba(178, 230,224, .2)
+}
+
+.contents .card .steplist .agreeAlertImg img {
+    width: 100%;
+    max-width: 246px;
+}
+
+.contents .card .steplist.step03{
+    margin-bottom: 0;
+}
+.contents .card .steplist.step03 ul {
+    border-top:0.5px solid var(--sys-color-outline);
+    padding: 12px 0 0 20px;
+    font-size: 14px;
+}
+.contents .card .steplist.step03 ul li {
+    width: 100%;
+    max-width: 278px;
+    margin:0 auto;
+    text-align: left;
+    position: relative
+}
+.contents .card .steplist.step03 ul li:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color:var(--sys-on-surface);
+    position: absolute;
+    left:-10px;
+    top:7px;
+}
+.contents .card .steplist.step03 ul li b {
+    font-size: 14px;
+    display: inline;
+    font-weight: 500;
+}
+
+.thinQ-youtube .video {
+    position:relative; 
+    padding-bottom:56.25%; 
+    padding-top:30px; 
+    height:0; 
+    overflow:hidden;
+}
+
+.thinQ-youtube .video iframe {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%;
+}
+
+/* /// 이벤트 상품안내 /// */
+.productList li {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px 0 14px;
+    align-items: center;
+    border-bottom: 0.5px solid var(--sys-color-outline);
+}
+.productList li:first-child {
+    padding-top: 0;
+}
+
+.productList li:last-child {
+    border-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.productList li div p {
+    font-size: 20px;
+    font-weight: 500;
+    color:var(--sys-color-ess-main);
+    margin-bottom: 5px;
+}
+
+.productList li div p img {
+    width: 32px;
+    margin-left:10px
+}
+.productList li div span {
+    display: block;
+    letter-spacing: -0.1px;
+}
+
+.productList li div span b {
+    display: block;
+    font-weight: 500;
+}
+
+.productList li div:last-child {
+    text-align: center;
+    font-weight: 500;
+    color: var(--sys-color-ess-main);
+    padding-left: 20px;
+}
+.productList li div .productImg {
+    width: 65px;
+    display: block
+}
+
+/* /// 자주 묻는 질문 /// */
+.qnaList {
+    margin:50px auto 40px
+}
+
+.qnaList h2 {
+    color: var(--sys-on-surface);
+    border:1px solid var(--sys-on-surface);
+    background-color: var(--sys-color-surface);
+}
+
+.qnaList dl {
+    background-color: var(--sys-color-surface);
+    border-radius: 10px;
+    /* padding: 14px 20px 13px; */
+    margin-top:12px;
+    text-align: left;
+}
+
+.qnaList dl:first-child {
+    margin-top: 0;
+}
+
+.qnaList dl dt,
+.qnaList dl dd {
+    position: relative;
+}
+.qnaList dl {
+    padding-bottom: 10px;
+}
+.qnaList dl dt {
+    padding: 12px 48px 4px 45px;
+}
+.qnaList dl dt::before {
+    content: "Q.";
+    display: block;
+    position: absolute;
+    left:20px;
+    top: 12px;
+    font-weight: bold;
+}
+.qnaList dl dt::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/ic_chevron_up.svg) center center no-repeat;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -5px;
+    rotate: -180deg;
+    transition-duration: 0.2s;
+}
+
+.qnaList dl dt.active::after {
+    rotate: 0deg;
+}
+
+.qnaList dl dd {
+    padding: 4px 20px 0 45px;
+}
+
+.qnaList dl dd::before {
+    content: "A.";
+    display: block;
+    position: absolute;
+    left:20px;
+    top: 4px;
+    font-weight: bold;
+}
+
+.qnaList dl dd::after {
+    content: "";
+    display: block;
+    width: calc(100% - 40px);
+    height: .5px;
+    background-color: var(--sys-color-outline);
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.btnPrecaution {
+    color: var(--ref-button-ess-btn);
+    font-size: 18px;
+    margin:0 auto;
+    text-align: center;
+}
+.btnPrecaution object {
+    position: relative;
+    top: 5px;
+}
+
+.btnAgree {
+    display: block;
+    padding: 16px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: var(--sys-color-background-variant);
+    z-index: 99999;
+}
+.arrowImg {
+    fill: var(--sys-color-ess-main);
+}
+
+.btnAgree button {
+    color: #ffffff;
+    background-color: var(--sys-color-ess-main);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 11px 12px 12px;
+    font-size: 17px;
+    word-break: normal;
+}
+
+/* /// darkMode /// */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --sys-color-background-variant:#202020;
+        --sys-color-surface:#2E3133;
+        --sys-on-surface:#ffffff;
+        --sys-color-on-surface-variant:#A1ACBF;
+        --sys-color-ess-main:#02B3A9;
+        --sys-color-outline:#606C80;
+        --ref-button-ess-btn:#01A298;
+        --ref-multi-color-teal-green-teal-green97:#00201d
+    }
+    .mainVisual:before {
+        background: linear-gradient(136.21deg, #00504A 10.52%, #013733 55.41%);
+        transform: rotate(-180deg);
+        opacity: 1;
+    }    
+}
+
+
+@media screen and (max-width: 430px){
+    .mainVisual .visualImg #airMotion {
+        max-width: 54%;
+    }
+}
