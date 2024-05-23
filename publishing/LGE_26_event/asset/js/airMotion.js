@@ -9,6 +9,12 @@ $(document).ready(function() {
         renderer: 'svg',
         autoplay: true
     });
+
+    $('.qnaList dd').hide();
+    $('.qnaList dt').click(function(){
+        $(this).toggleClass('active').siblings().slideToggle(200);
+    });
+
 });
 
 
