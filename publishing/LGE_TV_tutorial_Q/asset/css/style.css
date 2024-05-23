@@ -1,0 +1,238 @@
+@import url(./reset.css);
+
+/* /// 공통 /// */
+.wrap {
+    padding-bottom: 92px;
+}
+.thinQ_TV_reward img.animated,
+.thinQ_TV_Info div > img {
+    display: block;
+    margin:0 auto;
+    width: 100%;
+    max-width: 375px;
+    opacity: 0;
+}
+
+/* /// ThinQ TV 기능 소개 /// */
+.thinQ_TV_reward {
+    text-align: center;
+    padding:32px 0 40px;
+}
+.thinQ_TV_reward h1 {
+    /* background: url(../images/thinQ_TV_top_img.png) top center no-repeat;
+    background-size: 201px;
+    padding-top:95px; */
+    font-weight: 500;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.54);
+    margin-bottom: 16px;
+}
+.thinQ_TV_reward h1 b {
+    color:#000;
+    font-size: 22px;
+}
+.thinQ_TV_reward h1 mark {
+    color:#E5554F;
+}
+.thinQ_TV_reward p {
+    color:#38373D;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+.thinQ_TV_reward ul li {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.thinQ_TV_reward ul li b {
+    display: block;
+    font-size:15px;
+    margin-bottom: 3px;
+}
+.thinQ_TV_reward ul li:last-child{
+    margin-bottom: 0;
+}
+
+
+
+/* /// ThinQ TV 참여 안내 /// */
+.thinQ_TV_Info {
+    text-align: center;
+}
+.thinQ_TV_Info div:nth-child(odd) {
+    background-color: #fff;
+}
+.thinQ_TV_Info div {
+    padding: 40px 0 20px;
+}
+.thinQ_TV_Info div h2 {
+    color:#606060;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+.thinQ_TV_Info div h2 span {
+    color:#000000;
+}
+.thinQ_TV_Info div span.step {
+    display: block;
+    width: 74px;
+    line-height: 26px;
+    color: #fff;
+    background:#23778E;
+    font-size: 13px;
+    margin:0 auto 10px;
+    border-radius: 50px;
+}
+.thinQ_TV_Info div h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+.thinQ_TV_Info div p {
+    margin-bottom: 10px;
+}
+.thinQ_TV_Info div ul {
+    color: #606C80;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.thinQ_TV_Info div ul li:before {
+    content: '';
+    display:inline-block;
+    width: 2px;
+    height: 2px;
+    background: #606C80;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    top: -5px;
+}
+
+
+.thinQ_TV_Info div:first-child ul li::before {
+    display: none
+}
+
+.thinQ_TV_Info div ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 310px;
+    margin:24px auto 0;
+}
+
+.thinQ_TV_Info div ol li {
+    width: 50%;
+    opacity: 0;
+}
+
+.thinQ_TV_Info div ol li img {
+    width: 100%;
+    max-width:140px;
+    margin-bottom: 10px;
+}
+
+.thinQ_TV_Info div ol li span {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    padding: .9px 0 0 0;
+    margin-right: 7px;
+}
+
+.thinQ_TV_Info div ol li:first-child {
+    animation-delay: .2s;
+}
+.thinQ_TV_Info div ol li:nth-child(2) {
+    animation-delay: .4s;
+}
+.thinQ_TV_Info div ol li:nth-child(3) {
+    animation-delay: .6s;
+}
+.thinQ_TV_Info div ol li:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.fixeBtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #EFF1F4;
+    text-align: center;
+}
+.fixeBtn a {
+    display: block;
+    background:#23778E;
+    color: #fff;
+    font-size:16px;
+    font-weight: 500;
+    padding: 15px 12px 14px;
+    border-radius: 10px;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,20px,0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,20px,0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-delay: .2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}

@@ -1,0 +1,169 @@
+@import url(./font.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 1.4;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-weight: 400;
+    word-break: keep-all;
+    word-wrap: break-word;
+    background-color: #EFF1F4;
+    letter-spacing: -.5px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+fieldset {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+pre {
+    white-space: inherit;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border-width: 0;
+    font-size: inherit;
+    color: #fff;
+}
+
+fieldset, iframe {
+    width: 100%;
+}
+
+img, a, frame, iframe, fieldset {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--sys-color-on-surface)#000;
+}
+
+a[href^=tel] {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+i, em, address {
+    font-style: normal;
+    line-height: 140%;
+}
+
+table {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0;
+}
+
+caption {
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+input, textarea, select, button {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+form legend {
+    display: none;
+}
+
+.blind {
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.hidden {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+}
+
+h1, h2, h3, h4, h5, h6, p, span, strong {
+    line-height: 140%;
+    margin: 0;
+    word-break: keep-all;
+}
+
+ul, ol, dl {
+    line-height: 140%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+mark {
+    background: none;
+}
+
+svg {
+    fill:currentColor
+}
