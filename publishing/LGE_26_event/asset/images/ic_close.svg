@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <style>
+        .closeImg {fill:#606C80}
+        
+            @media (prefers-color-scheme: dark) {
+                .closeImg {fill:#A1ACBF}
+            }
+    </style>
+<g id="ic_close">
+<mask id="mask0_2207_145" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect id="Contianer (Mask)" width="24" height="24" fill="white"/>
+</mask>
+<g mask="url(#mask0_2207_145)">
+<path class="closeImg" id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd" d="M6.01202 4.92731C5.71913 4.63442 5.24425 4.63442 4.95136 4.92731C4.65847 5.2202 4.65847 5.69508 4.95136 5.98797L10.921 11.9576L4.95136 17.9273C4.65847 18.2202 4.65847 18.6951 4.95136 18.988C5.24425 19.2809 5.71913 19.2809 6.01202 18.988L11.9817 13.0183L17.9514 18.988C18.2443 19.2809 18.7191 19.2809 19.012 18.988C19.3049 18.6951 19.3049 18.2202 19.012 17.9273L13.0423 11.9576L19.012 5.98797C19.3049 5.69508 19.3049 5.2202 19.012 4.92731C18.7191 4.63442 18.2443 4.63442 17.9514 4.92731L11.9817 10.897L6.01202 4.92731Z" fill="#606C80"/>
+</g>
+</g>
+</svg>

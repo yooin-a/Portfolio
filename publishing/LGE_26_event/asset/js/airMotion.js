@@ -5,7 +5,9 @@ $(document).ready(function() {
     bodymovin.loadAnimation({
         container:document.getElementById("airMotion"),
         animationData: airMotion,
-        loop : true
+        loop : true,
+        renderer: 'svg',
+        autoplay: true
     });
 });
 
