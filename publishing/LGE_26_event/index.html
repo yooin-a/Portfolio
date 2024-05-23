@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThinQ 26도 챌린지</title>
     <link rel="stylesheet" href="./asset/css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./asset/js/airMotion.js"></script>
+    <script>
+        // 자주 묻는 질문
+        $('.qnaList dd').hide();
+        $('.qnaList dt').click(function(){
+            $(this).toggleClass('active').siblings().slideToggle(200);
+        });
+    </script>
+
 </head>
+
 <body>
     <!-- wrap -->
     <div class="wrap">
@@ -185,21 +198,10 @@
                 <a href="./bottomsheet_index.html">유의사항<object data="./asset/images/ic_chevron_right.svg"></object></a>
             </div>
             <div class="btnAgree">
-                <button>에너지 절약 선언하고 챌린지 동참하기</button>
+                <button onclick="location.href='./presenter.html'">에너지 절약 선언하고 챌린지 동참하기</button>
             </div>
             
         </div><!-- //contents -->
     </div><!-- //wrap -->
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="./asset/js/airMotion.js"></script>
-    <script>
-        // 자주 묻는 질문
-        $('.qnaList dd').hide();
-        $('.qnaList dt').click(function(){
-            $(this).toggleClass('active').siblings().slideToggle(200);
-        });
-    </script>
 </body>
 </html>
