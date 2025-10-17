@@ -8,9 +8,9 @@
       <!-- section1 -->
       <section id="intro" class="parallax-item flex w-full h-[90vh] p-8" ref="introSection">
         <div id="intro-caption" class="font-PlayfairDisplay flex flex-col justify-center items-center text-[4vw] w-full leading-[5.5vw]">
-          <p>Responsive and <span class="image-hover-trigger font-GreatVibes text-[7vw]" data-images="/images/thumb_26_challenge.png,/images/thumb_ggd.png,/images/thumb_goodfund.png">accessible</span>,</p>
+          <p>Responsive and <span class="image-hover-trigger font-GreatVibes text-[7vw]" data-images="/Portfolio/images/thumb_26_challenge.png,/images/thumb_ggd.png,/images/thumb_goodfund.png">accessible</span>,</p>
           <p><span class="text-stroke">I deliver</span> pixel-perfect</p>
-          <p><span class="image-hover-trigger font-GreatVibes text-[7vw]" data-images="/images/thumb_infinitie.png,/images/thumb_LG_mycup.png,/images/thumb_LG.png">web experiences</span> with <span class="text-stroke">clean</span>,</p>
+          <p><span class="image-hover-trigger font-GreatVibes text-[7vw]" data-images="/Portfolio/images/thumb_infinitie.png,/images/thumb_LG_mycup.png,/images/thumb_LG.png">web experiences</span> with <span class="text-stroke">clean</span>,</p>
           <p class="flex items-center justify-center">scalable code<span id="hand-pointer-container" class="flex items-center justify-center w-[5vw] h-[5vw] rounded-full bg-[#FFEA47] shadow-lg ml-4"><font-awesome-icon icon="hand-pointer" id="hand-pointer-icon" class="rotate-180 text-[2.5vw] leading-[2vw]"/></span></p>
         </div>
         <div id="accessible-images" class="absolute flex opacity-0 invisible pointer-events-none"></div>
@@ -129,9 +129,9 @@ export default {
       oldPortfolio: oldPortfolio,
       skillList: rawSkillList.filter(skill => skill.id !== undefined),
       videos: [
-        { src: '/videos/portfolio_video_1.mp4', text: 'Interactive' },
-        { src: '/videos/portfolio_video_2.mp4', text: 'Performant' },
-        { src: '/videos/portfolio_video_3.mp4', text: 'Accessible' }
+        { src: '/Portfolio/videos/portfolio_video_1.mp4', text: 'Interactive' },
+        { src: '/Portfolio/videos/portfolio_video_2.mp4', text: 'Performant' },
+        { src: '/Portfolio/videos/portfolio_video_3.mp4', text: 'Accessible' }
       ],
       sectionIds: ['intro', 'about', 'works', 'contact'],
     }
@@ -601,7 +601,7 @@ this.sectionIds.forEach(id => {
 #works-intro {
   position: relative;
   z-index: 2;
-  background:url('/images/works_intro_bg.jpg') top center no-repeat #000000;
+  background:url('/Portfolio/images/works_intro_bg.jpg') top center no-repeat #000000;
   background-size: 100%;
 }
     #works-list > div {

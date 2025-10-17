@@ -119,9 +119,9 @@ const props = defineProps({
     @apply bg-black;
   }
   .nav-link a {
-    @apply text-white mb-4 font-ContrailOne inline-block text-6xl hover:text-8xl transition-all duration-300 ease-out hover:text-[#dd2f20] [text-shadow:0_4px_10px_rgba(0,0,0,0.6)]
+    @apply text-white mb-4 font-ContrailOne inline-block text-6xl hover:text-8xl transition-all duration-300 ease-out hover:text-black [text-shadow:0_4px_10px_rgba(0,0,0,0.6)]
   }
   .nav-link a.active {
-    @apply text-8xl text-[#0faf00] !important; 
+    @apply text-8xl text-[#dd2f20] !important; 
   }  
 </style>

@@ -30,7 +30,6 @@ export default {
         PlayfairDisplay:['"Playfair Display"', 'sans-serif'],
         GreatVibes:['"Great Vibes"', 'sans-serif'],
         HomemadeApple:['"Homemade Apple"', 'sans-serif'],
-        ZenSerif:["ZenSerif-Regular", 'sans-serif']
       }
     },
   },
