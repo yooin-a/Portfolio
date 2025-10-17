@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Great+Vibes&family=Homemade+Apple&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-white:#ffffff;
+  --color-black: #1e1d1c;
+  /* --color-dark:rgba(30,28,27,1); */
+  --color-background:rgba(255,255,255,1);
+}
+
+body {
+  @apply break-keep leading-[1.8] min-h-lvh text-base;
+
+  color: var(--color-black);
+  background: var(--color-background);
+  font-family:-apple-system, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'ZenSerif-Regular';
+    src: url('/fonts/ZEN-SERIF-Regular.otf') format('opentype'), 
+         url('/fonts/ZEN-SERIF-TTF-Regular.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
