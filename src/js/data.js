@@ -5,14 +5,14 @@ const portfolioList = [
         image: "/Portfolio/images/thumb_Q_reward.png",
         client: "LG전자",
         skills: ["HTML5", "CSS3", "Animation", "반응형", "접근성"],
-        link:"https://yooin-a.github.io/Project-LG-DXC/LGE_TV_tutorial_Q/index.html"
+        link:"https://yooin-a.github.io/HTML-Project/LGE_TV_tutorial_Q/index.html"
     },{
         id : 1,
         title: "ThinQ X 한국에너지공단 26도 챌린지",
         image: "/Portfolio/images/thumb_26_challenge.png",
         client: "LG전자",
         skills: ["HTML5", "CSS3", "Animation", "반응형", "접근성"],
-        link:"https://yooin-a.github.io/Project-LG-DXC/LGE_26_event/index.html"
+        link:"https://yooin-a.github.io/HTML-Project/LGE_26_event/index.html"
     },{
         id : 2,
         title: "myCup App",
@@ -26,7 +26,7 @@ const portfolioList = [
         image: "/Portfolio/images/thumb_LG.png",
         client: "LG전자",
         skills: ["HTML5", "CSS3", "Animation", "반응형", "접근성"],
-        link:"https://yooin-a.github.io/Project-LG-DXC/LGE/index.html"
+        link:"https://yooin-a.github.io/HTML-Project/LGE/index.html"
     },
      {
         id : 4,
@@ -34,7 +34,7 @@ const portfolioList = [
         image: "/Portfolio/images/thumb_NFT.png",
         client: "BISKET X VP",
         skills: ["HTML5", "CSS3", "JAVASCRIPT", "반응형", "UI/UX", "XD"],
-        link:"https://yooin-a.github.io/Project-LG-DXC/VP_NFT_bisket/index.html"
+        link:"https://yooin-a.github.io/HTML-Project/VP_NFT_bisket/index.html"
     }, {
         id : 5,
         title : "스마트안전결제 웹사이트",
