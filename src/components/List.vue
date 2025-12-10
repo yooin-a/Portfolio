@@ -36,5 +36,4 @@
     color: transparent;
     -webkit-text-stroke: 1px var(--color-black);
   }
-
 </style>
