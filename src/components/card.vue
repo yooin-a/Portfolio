@@ -11,6 +11,7 @@
                         <b class="text-4xl">{{ item.title }}</b>
                     </p>
                     <ul class="flex gap-1">
+                        <li>참여 비중 {{ item.rate }}</li>
                         <li v-for="skill in item.skills" :key="skill" class="skill-tag">{{ skill }}</li>
                     </ul>
                 </div>

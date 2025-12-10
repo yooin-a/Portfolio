@@ -107,7 +107,7 @@
   import oldPortfolio from './js/data2.js';
   import rawSkillList from './js/skill.js';
   import NavMenu from './components/NavMenu.vue';
-  import { ref } from 'vue'; // Import ref
+  import { ref } from 'vue';
 
   import { gsap } from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -178,7 +178,6 @@ this.sectionIds.forEach(id => {
             }
         });
 
-      // Section 1 and 2 initial animation timeline
       const mainTimeline = gsap.timeline({
         scrollTrigger: {
           trigger: "#intro",
@@ -200,7 +199,6 @@ this.sectionIds.forEach(id => {
         stagger: 0.3
       }, "-=0.5");
 
-      // Accessible hover effect
       let mouseX = 0;
       let mouseY = 0;
       document.addEventListener('mousemove', (e) => {
@@ -237,7 +235,6 @@ this.sectionIds.forEach(id => {
         }
       });
 
-      // Hand pointer animations
       gsap.to("#hand-pointer-icon", {
         rotation: 225,
         scrollTrigger: {
@@ -259,7 +256,6 @@ this.sectionIds.forEach(id => {
         gsap.to(handPointer, { scale: 1, duration: 0.3 });
       });
 
-      // Create a paused timeline for the about text animation
       const aboutTextAnim = gsap.timeline({ paused: true })
         .from(["#about-text-en p", "#about-text-ko p"], {
           opacity: 0,
@@ -269,7 +265,6 @@ this.sectionIds.forEach(id => {
           ease: 'power3.out',
         });
 
-      // Section 2 Horizontal Scroll
       const videoContainer = document.getElementById('video-container');
       gsap.to(videoContainer, {
         x: () => -(videoContainer.scrollWidth - (document.documentElement.clientWidth - 64)),
@@ -311,7 +306,6 @@ this.sectionIds.forEach(id => {
         }
       });
 
-      // Skill list infinite rolling animation
       const skillList = document.querySelector('#about .flex.flex-nowrap');
       this.$nextTick(() => {
         const skillItems = gsap.utils.toArray('#about .list-item');
@@ -320,7 +314,7 @@ this.sectionIds.forEach(id => {
         for (let i = 0; i < skillItems.length / 2; i++) {
             totalWidth += skillItems[i].offsetWidth;
         }
-        const gap = 32; // gap-8 is 2rem
+        const gap = 32;
         totalWidth += gap * (skillItems.length / 2);
         gsap.set(skillList.parentElement, { overflow: 'hidden' });
         gsap.to(skillList, {
@@ -331,27 +325,23 @@ this.sectionIds.forEach(id => {
         });
       });
 
-
-      // Section 3 Pinning ScrollTrigger
       ScrollTrigger.create({
         trigger: "#works-intro",
         start: "top top",
-        end: "+=3000", // Match the animation duration
+        end: "+=3000",
         pin: true,
       });
 
-      // Section 3 Master Timeline for complex animation (animates content within pinned section)
       const section3MasterTimeline = gsap.timeline({
         scrollTrigger: {
-          trigger: "#works-intro", // Animation starts based on this
+          trigger: "#works-intro",
           start: "top center",
-          end: "+=3000", // Fixed long scroll distance for animation duration
+          end: "+=3000",
           scrub: 1,
         }
       });
 
-      // 1단계: 배경 스케일 확대 및 이미지 등장
-      section3MasterTimeline.fromTo("#works-intro", { // Target the new div
+      section3MasterTimeline.fromTo("#works-intro", {
         scale: 0.6,
         borderRadius: "50px",
         opacity: 0,
@@ -363,26 +353,24 @@ this.sectionIds.forEach(id => {
       }, 0);
 
 
-      // 2단계: 텍스트 나타나는 애니메이션 (배경 애니메이션 이후에 시작)
       section3MasterTimeline.from("#works-intro-title span > span", {
         opacity: 0,
         y: -100,
-        stagger: 0.2, // 조정된 stagger 값
+        stagger: 0.2,
         ease: "power2.out",
         duration: 1
-      }, ">-0.5"); // 이전 애니메이션이 끝나기 0.5초 전에 시작 (겹쳐서 부드럽게)
+      }, ">-0.5");
 
-      // New animation for card-items and their info
       gsap.utils.toArray(".portfolio-grid .card-item").forEach((item, i) => {
-        const isRightColumn = (i % 2 !== 0); // Check if it's an odd index (0-based), meaning it's in the right column
-        const startOffset = isRightColumn ? "top 80%" : "top bottom"; // Right column starts when its top is 80% down the viewport
-        const endOffset = isRightColumn ? "center 30%" : "center center"; // Right column ends when its center is 30% down the viewport
+        const isRightColumn = (i % 2 !== 0);
+        const startOffset = isRightColumn ? "top 80%" : "top bottom";
+        const endOffset = isRightColumn ? "center 30%" : "center center";
 
         const cardTimeline = gsap.timeline({
           scrollTrigger: {
-            trigger: item, // Each item is its own trigger
-            start: startOffset, // Adjust start based on column
-            end: endOffset, // Adjust end based on column
+            trigger: item,
+            start: startOffset,
+            end: endOffset,
             scrub: 1,
           }
         });
@@ -393,27 +381,26 @@ this.sectionIds.forEach(id => {
           ease: "power2.out",
           duration: 1,
         })
-        .from(item.querySelector(".card-info"), { // Animate the card-info child
+        .from(item.querySelector(".card-info"), {
           opacity: 0,
-          y: 50, // Animate up by 50px
+          y: 50,
           ease: "power2.out",
           duration: 0.8,
-        }, "+=0.4"); // Start 0.4 seconds after the card-item animation ends
+        }, "+=0.4");
       });
 
-      // Animation for List items
-      if (this.worksUlRef) { // Check if worksUlRef is available
-        gsap.from(this.worksUlRef.querySelectorAll('li'), { // Target all <li> elements within the ref'd <ul>
+      if (this.worksUlRef) {
+        gsap.from(this.worksUlRef.querySelectorAll('li'), {
           opacity: 0,
           y: 20,
-          stagger: 0.1, // Appear one by one
+          stagger: 0.1,
           duration: 0.5,
           ease: "power1.out",
           scrollTrigger: {
-            trigger: this.worksUlRef, // Use the ref as the trigger
-            start: "top bottom-=50", // Start when the top of the <ul> is 50px from the bottom of the viewport
-            scrub: true, // Make it react continuously to scrolling
-            scroller: window, // Explicitly define the scroller
+            trigger: this.worksUlRef,
+            start: "top bottom-=50",
+            scrub: true,
+            scroller: window,
           }
         });
       }
@@ -431,55 +418,31 @@ this.sectionIds.forEach(id => {
         }
       });
 
-            // Contact Section Master Timeline
-
             const contactMasterTl = gsap.timeline({
-
               scrollTrigger: {
-
                 trigger: "#contact",
-
                 start: "top bottom",
-
                 end: "bottom bottom",
-
                 scrub: 1
-
               }
-
             });
 
-      
-
             contactMasterTl.from("#contact", {
-
               scale: 0.85,
-
               borderRadius: '50px',
-
               opacity: 0.5,
-
               ease: "power1.inOut"
-
             }, 0);
 
-      
-
             contactMasterTl.from("#contact .reveal-container > *", {
-
                 y: "110%",
-
                 opacity: 0,
-
                 ease: "power4.out",
-
                 stagger: 0.3
-
             }, 0.3);
 
-      // Centralized hover animation for icons
       gsap.utils.toArray(".animate-on-hover-icon").forEach((icon) => {
-        const hoverTrigger = icon.closest('.card-item') ? icon.closest('a') : icon.closest('li'); // Dynamically determine hover trigger
+        const hoverTrigger = icon.closest('.card-item') ? icon.closest('a') : icon.closest('li');
 
         if (hoverTrigger) {
           const iconTween = gsap.to(icon, {
@@ -494,7 +457,6 @@ this.sectionIds.forEach(id => {
         }
       });
 
-      // Hamburger button color change on dark sections
       const darkSections = gsap.utils.toArray("#works, #contact");
       darkSections.forEach((section) => {
         ScrollTrigger.create({
@@ -507,11 +469,10 @@ this.sectionIds.forEach(id => {
           onLeaveBack: () => this.$refs.navMenu.setDarkSection(false),
         });
       });
-
-    }); // End of gsap.context
+    });
   },
   unmounted() {
-    this.ctx.revert(); // Cleanup GSAP animations and ScrollTriggers
+    this.ctx.revert();
   },
   methods: {
     handleScrollToSection(sectionName) {
@@ -526,7 +487,6 @@ this.sectionIds.forEach(id => {
      targetElement = document.getElementById('about')
      break;
     case 'works':
-          // Works는 ID로 찾기로 했으므로 document.getElementById를 사용
      targetElement = document.getElementById('works');
      break;
     case 'contact':
@@ -614,7 +574,6 @@ this.sectionIds.forEach(id => {
       transition: color 0.3s ease;
     }
 
-    /* Initial State */
     .contact-link-swap span:first-child {
       color: transparent;
       -webkit-text-stroke: 1px white;
@@ -624,7 +583,6 @@ this.sectionIds.forEach(id => {
       -webkit-text-stroke: 0;
     }
 
-    /* Hover State */
     .contact-link-swap:hover span:first-child {
       color: white;
       -webkit-text-stroke: 0;
@@ -634,7 +592,6 @@ this.sectionIds.forEach(id => {
       -webkit-text-stroke: 1px white;
     }
 
-    /* "Back to the top" button hover effect */
     .back-to-top-btn {
       transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     }
@@ -662,7 +619,7 @@ this.sectionIds.forEach(id => {
       background-color: #222;
       color: #fff;
     }
-    ::-moz-selection { /* Code for Firefox */
+    ::-moz-selection {
       background-color: #222;
       color: #fff;
     }

@@ -3,7 +3,7 @@
         <!-- 링크가 있는 경우: a 태그로 전체를 감쌈 -->
         <a v-if="item.link"  :href="item.link" target="_blank" class="flex flex-row-2 p-8 items-center justify-between text-2xl">
             <p>
-                <mark class="bg-transparent text-sm block mb-2 opacity-60">{{ item.client }}</mark>
+                <mark class="bg-transparent text-sm block mb-2 opacity-60">{{ item.client }} | 참여 비중 100%</mark>
                 <span>{{ item.title }}</span>
             </p>
             <div>
@@ -15,7 +15,7 @@
         <!-- 링크가 없는 경우: div 태그로 전체를 감쌈 -->
         <div v-else class="flex flex-row-2 p-8 items-center justify-between text-2xl">
             <p>
-                <mark class="bg-transparent text-sm block mb-2 text-black/60">{{ item.client }}</mark>
+                <mark class="bg-transparent text-sm block mb-2 text-black/60">{{ item.client }} | 참여 비중 100%</mark>
                 <span>{{ item.title }}</span>
             </p>
             <div>
