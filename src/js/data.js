@@ -5,7 +5,7 @@ const portfolioList = [
         image: "/Portfolio/images/thumb_Q_reward.png",
         client: "LG전자",
         rate: "100%",
-        skills: ["HTML5", "CSS3", "Animation", "반응형", "접근성"],
+        skills: ["HTML", "SCSS", "Animation", "반응형", "접근성"],
         link:"https://yooin-a.github.io/HTML-Project/LGE_TV_tutorial_Q/index.html"
     },{
         id : 1,
@@ -13,7 +13,7 @@ const portfolioList = [
         image: "/Portfolio/images/thumb_26_challenge.png",
         client: "LG전자",
         rate: "100%",
-        skills: ["HTML5", "CSS3", "Animation", "반응형", "접근성"],
+        skills: ["HTML", "SCSS", "Animation", "반응형", "접근성"],
         link:"https://yooin-a.github.io/HTML-Project/LGE_26_event/index.html"
     },{
         id : 2,
@@ -29,7 +29,7 @@ const portfolioList = [
         image: "/Portfolio/images/thumb_LG.png",
         client: "LG전자",
         rate: "80%",
-        skills: ["HTML5", "CSS3", "Animation", "반응형", "접근성"],
+        skills: ["HTML", "SCSS", "Animation", "반응형", "접근성"],
         link:"https://yooin-a.github.io/HTML-Project/LGE/index.html"
     },
      {
@@ -38,7 +38,7 @@ const portfolioList = [
         image: "/Portfolio/images/thumb_NFT.png",
         client: "BISKET X VP",
         rate: "100%",
-        skills: ["HTML5", "CSS3", "JAVASCRIPT", "반응형", "UI/UX", "XD"],
+        skills: ["HTML", "SCSS", "JAVASCRIPT", "반응형", "UI/UX", "XD"],
         link:"https://yooin-a.github.io/HTML-Project/VP_NFT_bisket/index.html"
     }, {
         id : 5,
