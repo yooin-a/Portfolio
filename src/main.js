@@ -2,6 +2,7 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 
 // Font Awesome 라이브러리 설정
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -31,5 +32,7 @@ const app = createApp(App)
 
 // 'font-awesome-icon' 컴포넌트를 전역으로 등록
 app.component('font-awesome-icon', FontAwesomeIcon)
+
+app.use(router)
 
 app.mount('#app')

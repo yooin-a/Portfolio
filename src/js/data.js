@@ -99,6 +99,33 @@ const portfolioList = [
         skills:["HTML5", "CSS3", "JAVASCRIPT", "Animation", "반응형"],
         link: 'http://www.sosline.or.kr/'
     },
+    {
+        id: 12,
+        title:'Android - 플레이스 화면 디자인',
+        image: "/Portfolio/images/thumb_place.png",
+        client: 'VP',
+        rate: "100%",
+        skills:["App Design", "UI/UX", "Adobe XD"],
+        link: '/place-design'
+    },
+    {
+        id: 13,
+        title:'SP Care 서비스 디자인',
+        image: "/Portfolio/images/thumb_spcare.png",
+        client: 'VP',
+        rate: "100%",
+        skills:["Service UI", "Editorial Design", "Photoshop"],
+        link: '/spcare-design'
+    },
+    {
+        id: 14,
+        title:'스마트안전결제 디자인 시안',
+        image: "/Portfolio/images/thumb_safetypay_design.png",
+        client: 'VP',
+        rate: "100%",
+        skills:["UI/UX Design", "Promotion", "AD Banner"],
+        link: '/safetypay-design'
+    },
 ];
 
 export default portfolioList;
