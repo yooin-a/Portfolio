@@ -6,7 +6,7 @@ const portfolioList = [
         client: "LG전자",
         rate: "100%",
         skills: ["HTML", "SCSS", "Animation", "반응형", "접근성"],
-        link:"https://yooin-a.github.io/HTML-Project/LGE_TV_tutorial_Q/index.html"
+        link:"https://lge-tv-tutorial-q.netlify.app/"
     },{
         id : 1,
         title: "ThinQ X 한국에너지공단 26도 챌린지",
@@ -14,7 +14,7 @@ const portfolioList = [
         client: "LG전자",
         rate: "100%",
         skills: ["HTML", "SCSS", "Animation", "반응형", "접근성"],
-        link:"https://yooin-a.github.io/HTML-Project/LGE_26_event/index.html"
+        link:"https://lge-26-event.netlify.app/"
     },{
         id : 2,
         title: "myCup App",
@@ -22,7 +22,7 @@ const portfolioList = [
         client: "LG전자",
         rate: "60%",
         skills:["App", "React", "접근성"],
-        link:"https://apps.apple.com/kr/app/lg-mycup/id6504182265"
+        link:"https://mycup.netlify.app/home"
     }, {
         id : 3,
         title : "ThinQ 가전 에너지 상세 페이지",
@@ -30,7 +30,7 @@ const portfolioList = [
         client: "LG전자",
         rate: "80%",
         skills: ["HTML", "SCSS", "Animation", "반응형", "접근성"],
-        link:"https://yooin-a.github.io/HTML-Project/LGE/index.html"
+        link:"https://lge-thinq.netlify.app/"
     },
      {
         id : 4,
@@ -39,7 +39,7 @@ const portfolioList = [
         client: "BISKET X VP",
         rate: "100%",
         skills: ["HTML", "SCSS", "JAVASCRIPT", "반응형", "UI/UX", "XD"],
-        link:"https://yooin-a.github.io/HTML-Project/VP_NFT_bisket/index.html"
+        link:"https://vp-nft-bisket.netlify.app/"
     }, {
         id : 5,
         title : "스마트안전결제 웹사이트",
@@ -80,9 +80,17 @@ const portfolioList = [
         rate: "100%",
         skills:["HTML5", "CSS3", "JAVASCRIPT", "Animation", "반응형"],
         link:"https://www.palrago.com/"
+    },{
+        id : 10,
+        title : "kaspersky",
+        image: "/Portfolio/images/thumb_kaspersky.png",
+        client: "한국선불카드(주)",
+        rate: "100%",
+        skills:["VUE", "SCSS", "접근성"],
+        link:"https://kpcard-kaspersky.netlify.app/"
     },
     {
-        id: 10,
+        id: 11,
         title:"한국생명의전화 홈페이지",
         image: "/Portfolio/images/thumb_lifeline.png",
         client: '한국생명의전화',
@@ -91,7 +99,7 @@ const portfolioList = [
         link: 'https://www.lifeline.or.kr/'
     },
     {
-        id: 11,
+        id: 12,
         title:'SOS생명의전화 홈페이지',
         image: "/Portfolio/images/thumb_soslifeline.png",
         client: '한국생명의전화',
@@ -100,7 +108,7 @@ const portfolioList = [
         link: 'http://www.sosline.or.kr/'
     },
     {
-        id: 12,
+        id: 13,
         title:'Android - 플레이스 화면 디자인',
         image: "/Portfolio/images/thumb_place.png",
         client: 'VP',
@@ -109,7 +117,7 @@ const portfolioList = [
         link: '/place-design'
     },
     {
-        id: 13,
+        id: 14,
         title:'SP Care 서비스 디자인',
         image: "/Portfolio/images/thumb_spcare.png",
         client: 'VP',
@@ -118,7 +126,7 @@ const portfolioList = [
         link: '/spcare-design'
     },
     {
-        id: 14,
+        id: 15,
         title:'스마트안전결제 디자인 시안',
         image: "/Portfolio/images/thumb_safetypay_design.png",
         client: 'VP',
